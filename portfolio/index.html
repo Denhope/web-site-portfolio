@@ -14,26 +14,29 @@
 <body>
   <header class="header">
 
-    <div class="wrapper">
+    <div class="wrapper header__wrapper">
 
-      <a href="#" class="logo"></a>
+      <img class="header__logo" src="./src/assets/header/logo.svg" alt="header-logo">
         
       <nav class="header__navigation">
 
         <ul class="navigation">
-          <li>Skills</li>
-          <li>Skills</li>
-          <li>Skills</li>
-          <li>Skills</li>
-          <li>Skills</li>
+          <li class="navigation__link">Skills
+            <!-- <a href="#skills">Skills</a> -->
+          </li>
+          <li class="navigation__link">Portfolio</li>
+          <li class="navigation__link">Video</li>
+          <li class="navigation__link">Price</li>
+          <li class="navigation__link">Contacts</li>
         </ul>  
                   
       </nav>
 
-      <div class="header__swich-language">
-        <button class="button">EN</button>
-        <button class="button">RU</button>   
-      </div>
+      <ul class="header__language">
+        <li class="language__link_selected">en</li>
+        <li class="language__slash">/</li>
+        <li class="language__link">ru</li>   
+      </ul>
 
     </div>   
 
@@ -42,7 +45,7 @@
   <main>
     <section class="hero">
 
-      <div class="wrapper">
+      <div class="wrapper hero__wrapper">
 
         <div class="hero__content">
           <h1>Alexa Rise</h1>
@@ -50,7 +53,7 @@
         </div>
 
         <div class="hero__button">
-          <button class="buttom__buttom_colored">Hire me</button>
+          <button class="button button_colored">Hire me</button>
         </div>
   
       </div>
@@ -82,16 +85,16 @@
     </section>
 
     <section class="portfolio">
-      <div class="wrapper">
+      <div class="wrapper portfolio__wrapper">
         <h2>Portfolio</h2>
         <div class="section-line"></div>
 
         <div class="portfolio__button">
 
-          <button class="buttom__buttom">Winter</button>
-          <button class="buttom__buttom">Spring</button>
-          <button class="buttom__buttom">Summer</button>
-          <button class="buttom__buttom_colored">Autumn</button>
+          <button class="button button_bordered">Winter</button>
+          <button class="button button_bordered">Spring</button>
+          <button class="button button_bordered">Summer</button>
+          <button class="button button_colored">Autumn</button>
           
         </div>
 
@@ -117,8 +120,8 @@
     <section class="video">
        
 
-      <div class="wraper">
-        <h2>Video</h2>
+      <div class="wrapper">
+        <h2 class="section-title">Video</h2>
       <div class="section-line">
 
         </div>
@@ -140,14 +143,14 @@
 
           <div class="price__block">
             <h3>Standart</h3>
-            <h3>500</h3>
+            <h3 class="price-number">500</h3>
             <p>
               One location
               120 photos in color
               12 photos in retouch
               Make up, visage              
             </p>
-            <button class="buttom__buttom_colored">Order shooting</button>
+            <button class="button__button_colored">Order shooting</button>
             
           </div>
 
@@ -158,17 +161,21 @@
     </section>
 
     <section class="contacts">
-      <div class="wrapper">
+      <div class="wrapper contacts__wrapper">
+        <div class="layout-2-column">
 
-        <div class="contacts__form">
-          <h2>Contact me</h2>          
-          <input type="email" name="email" placeholder="E-mail">
-          <input type="email" name="email" placeholder="Phone">
-          <textarea name="message" placeholder="Message" class="contacts__form"></textarea>
-          <button class="buttom__buttom_colored">Send message</button>          
-        </div>                     
+          <div class="contacts__form">
+            <h2>Contact me</h2>          
+            <input type="email" name="email" placeholder="E-mail">
+            <input type="email" name="email" placeholder="Phone">
+            <textarea name="message" placeholder="Message" class="contacts__form"></textarea>
+            <button class="button button_colored">Send message</button>          
+          </div>    
 
+        </div>
+        
       </div>
+
     </section>   
 
   </main>

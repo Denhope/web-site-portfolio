@@ -4,7 +4,158 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Open Sans", Verdana, sans-serif;
+  font-family: "Merriweather Sans", Verdana, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120px;
+  color: #ffffff;
+  /* identical to box height, or 200% */
+}
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  color: #bdae82;
+  text-align: center;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 56px;
+  /* identical to box height, or 200% */
+}
+
+h4 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  /* identical to box height, or 200% */
+}
+
+p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+.button {
+  padding: 8px 40px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 4rem;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.button_bordered {
+  background-color: #000000;
+  border: 1px solid #bdae82;
+  color: #bdae82;
+}
+
+.button_colored {
+  background-color: #bdae82;
+  color: #000000;
+}
+
+.button_colored:hover {
+  color: #ffffff;
+}
+
+.button_bordered:hover {
+  color: #ffffff;
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.header {
+  background-color: blue;
+  padding: 20px 0 20 0;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation,
+.header__language {
+  display: flex;
+}
+
+.navigation__link,
+.language__link,
+.language__slash {
+  list-style: none;
+  padding: 0 15px;
+  cursor: pointer;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+.language__link_selected {
+  list-style: none;
+  padding: 0 15px;
+  cursor: pointer;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: #bdae82;
+}
+
+.hero__wrapper {
+  background-image: url("../assets/hero/bg.png");
+  min-height: 500px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  background-image: url("../assets/contacts/contacts.png");
+  min-height: 500px;
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__wrapper {
+  background-color: #000000;
+}
+
+.price .wrapper {
+  background-color: #000000;
+}
+
+.video .wrapper {
+  background-color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

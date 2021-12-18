@@ -3,14 +3,25 @@
 @import "abstract/constants";
 
 
+
 //Base
 @import "base/base";
+@import "base/buttons";
 
 
 //Layouts
+@import "layouts/wrapper";
+@import "layouts/header";
+@import "layouts/hero";
+@import "layouts/contacts";
+@import "layouts/portfolio";
 
 
 // Components
+// @import "components/contacts";
+@import "components/price";
+@import "components/video";
+
 
 
 

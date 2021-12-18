@@ -1,0 +1,41 @@
+.header {
+  background-color:blue;
+  padding: 20px 0 20 0;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation,
+.header__language {
+  display: flex;
+}
+
+.navigation__link,
+.language__link, 
+.language__slash {
+  list-style: none;
+  padding: 0 15px;
+  cursor: pointer;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: $color-link;
+}
+
+.language__link_selected {
+  list-style: none;
+  padding: 0 15px;
+  cursor: pointer;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: $color-primery;
+}

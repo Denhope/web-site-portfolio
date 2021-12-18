@@ -1,0 +1,12 @@
+.contacts__wrapper {
+  display: flex;
+  background-image: url("../assets/contacts/contacts.png") ;
+  min-height: 500px;
+}
+
+
+
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+}

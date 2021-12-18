@@ -1,0 +1,31 @@
+.button {
+  padding: 8px 40px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 4rem; 
+  border-radius: 0px;
+  cursor: pointer; 
+  transition: all .3s;
+}
+
+.button_bordered {
+  background-color: $color-background;
+  border:  1px solid $color-primery;
+  color: $color-primery;
+}
+
+.button_colored {
+  background-color: $color-primery;
+  color: $color-primery-button;
+}
+
+.button_colored:hover {
+  color: $color-hovered;
+}
+
+.button_bordered:hover {
+  color: $color-hovered
+}
+
