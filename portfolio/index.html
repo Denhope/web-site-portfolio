@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="src/sass/style.css"> -->
+  </head>
+
 <body>
   <header class="header">
 
@@ -99,7 +104,7 @@
             <img class= "set__item" src="#">
             <img class= "set__item" src="#">
             <img class= "set__item" src="#">
-            <img class= "set__item" src="#">
+            <img class= "set__item" src="#">;
             
           </div>
 
@@ -110,11 +115,13 @@
     </section>
 
     <section class="video">
-      
+       
 
       <div class="wraper">
         <h2>Video</h2>
-        <div class="section-line"></div>
+      <div class="section-line">
+
+        </div>
 
         <div class="video__player">
           <iframe class="video-main" src="https://www.youtube.com/embed/zp1BXPX8jcU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -152,20 +159,73 @@
 
     <section class="contacts">
       <div class="wrapper">
-        <div class="form-container">
 
+        <div class="contacts__form">
           <h2>Contact me</h2>          
-          <input type="email">
-          <input type="phone">
-          <textarea rows="4" cols="30">textarea с 5 строками и 30 столбцами</textarea>
-          <button class="buttom__buttom_colored">Send message</button>
-          
+          <input type="email" name="email" placeholder="E-mail">
+          <input type="email" name="email" placeholder="Phone">
+          <textarea name="message" placeholder="Message" class="contacts__form"></textarea>
+          <button class="buttom__buttom_colored">Send message</button>          
         </div>                     
 
       </div>
-    </section>
+    </section>   
 
   </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer_nav">
+        <p class="footer_data">
+          <span class="icon-mail">mail-logo
+            <a href="mailto:den_hoper@gmail.com"></a>
+          </span>
+
+          <p>2022</p>
+
+          <span class="icon-mail">github
+            <a href="mailto:den_hoper@gmail.com"></a>
+          </span>            
+            
+        </p>
+
+        <p class="footer_shool">Rolling Scopes School</p>
+        
+
+        <nav class="footer_nav_soc">
+          <ul class="footer_nav_soc_ul">
+            
+            <li>
+              <a href="https://www.instagram.com/?hl=ru">
+                <div class="footer_soc_instagram"></div>
+              </a>
+            </li>
+    
+            <li>
+              <a href="https://www.facebook.com">
+                <div class="footer_soc_facebook"></div>
+              </a>
+            </li>
+    
+            <li>
+              <a href="https://twitter.com/?lang=ru">
+                <div class="footer_soc_twitter"></div>
+              </a>
+            </li>
+    
+            <li>
+              <a href="https://www.pinterest.com">
+                <div class="footer_soc_pinterest"></div>
+              </a>
+            </li>
+            
+          </ul>
+        </nav>
+			</div>
+    </div>
+
+    
+  </footer>
 
   
 </body>
