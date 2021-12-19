@@ -222,11 +222,21 @@
       <div class="wrapper contacts__wrapper">
         <!-- <div class="layout-2-column"> -->
 
-          <div class="contacts__form">
-            <h2 class="contacts-title">Contact me</h2>          
-            <input type="email" name="email" placeholder="E-mail">
+          <div class="contacts__container">
+            <h2 class="contacts__title">Contact me</h2>          
+            <!-- <input type="email" name="email" placeholder="E-mail">
             <input type="email" name="email" placeholder="Phone">
-            <textarea name="message" placeholder="Message" class="contacts__form"></textarea>
+            <textarea name="message" placeholder="Message" class="contacts__message"></textarea> -->
+
+
+            
+            <input class="contacts__email" id="contacts-email" name="email" placeholder="E-mail"
+                       required type="email"><p id="error-message-email"></p>
+            <input class="contacts__phone" id="contacts-phone" name="phone" placeholder="Phone"
+                       required type="tel">
+            <input class="contacts__message" id="contacts-message" maxlength="1500" minlength="5"
+                       name="massage" pattern="[A-Za-zА-Яа-я ]{5,1500}" placeholder="Message" required type="text">
+                       <p id="error-message-name"></p>
             <button class="button button_colored">Send message</button>          
           </div>    
 

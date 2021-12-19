@@ -1,11 +1,48 @@
 .contacts__wrapper {
   display: flex;
   flex-direction:row-reverse;  
-  background-image: url("../assets/hero/bg.png");
+  background-image: url("../assets/contacts/contacts.png");
   height: auto;
 }
 
-.contacts__form {
+.contacts__container {
   display: flex;
   flex-direction: column;
+  max-width: 450px;
+  margin: 59px 40px 196px 950px;
+  padding: 0;
+}
+
+.contacts__title {
+  margin: 0;  
+  text-align: left;
+}
+
+.contacts__email,
+.contacts__phone {
+  margin: 10px 0; 
+  border: 2px solid $color-primery;  
+  letter-spacing: 0em;
+  text-align: left;
+  border-radius: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  @include font (2rem, 4rem, $color: $color-white, $wight: normal);
+  @extend %font-add;
+}
+
+.contacts__message {
+  margin: 10px 0 30px;
+  height: 100px;
+  width: 450px;
+  border-radius: 0px;
+  border: 2px solid $color-primery;  
+  letter-spacing: 0em;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.5);
+  @include font (2rem, 4rem, $color: $color-white, $wight: normal);
+  @extend %font-add;
+}
+
+ ::placeholder {
+  color: $color-primery;
 }
