@@ -1,31 +1,30 @@
-.hero__wrapper {
-  
+.hero__wrapper {  
+  display: flex;
   background-image: url("../assets/hero/bg.png");
-  height: 910px;
 }
 
 .hero__content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  max-width: 50rem;
-  max-height: 33rem;
-  padding: 8rem 16rem;  
+  margin: 250px 860px 330px 80px;
 }
 
-.content__text {  
-  max-width: 47rem;
-  max-height: 12rem;
-  font-size: 20px;
-  line-height: 40px;
+.hero__text {  
+  max-width: 470px;
+  margin: 0 0 25px;
   text-align: left;
 
+  @include font (2rem, 4rem, $wight: 400);
+  @extend %font-add;
 }
+// @mixin font ($size, $hight, $wight: bold, $style: normal, $color:$color-text) {
 
 .hero__button {
-  margin-top: 20px;
+  //
 }
 
 .hero__title {
-  margin-bottom: 10px;
+  margin: 0 0 10px;
+  max-width: 500px;
+  max-height: 120px;
 }
