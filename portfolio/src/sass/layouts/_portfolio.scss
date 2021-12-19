@@ -1,3 +1,14 @@
 .portfolio__wrapper {
   background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portolio__slider {
+  padding: 20px 20px 0px;
+}
+
+.set__item {
+  padding: 7px
 }

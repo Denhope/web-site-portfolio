@@ -1,18 +1,12 @@
-.layout-4-column {
-  // @include columns($width: 21%);
-  display: flex;
+.layout-4-columns {
+  @include columns($width: 24%);
 }
 
-// .layout-3-column {
-//   @include columns($width: 30%);
-//   &:after {
-//       content: '';
-//       width: 30%;
-//       display: block;
-//   }
-// }
+.layout-3-columns {
+  @include columns($width: 30%);
+}
 
-// .layout-2-column {
-//   display: flex;
-//   @include columns($width: 48%);
-// }
+.layout-2-column {
+  
+  @include columns($width: 48%);
+}

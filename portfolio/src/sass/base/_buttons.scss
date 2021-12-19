@@ -1,4 +1,5 @@
 .button {
+  width: 250px;
   padding: 8px 40px;
   font-family: Inter;
   font-style: normal;
@@ -27,4 +28,16 @@
   }
 }
 
-
+.player__screen-button {
+  position: absolute;
+  top: calc(50% - 155px);
+  left: calc(50% - 110px);
+  z-index: 2;
+  width: 220px;
+  height: 220px;
+  background-color: transparent;
+  // background-image: url("../abstract/play-btn.svg");
+  // background: transparent url("../src/assets/video/play-btn 1.png");
+  border: none;
+  cursor: pointer;
+}

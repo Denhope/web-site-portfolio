@@ -65,8 +65,7 @@
         <h2 class="skills__title">Skills</h2>
         <div class="section-line"></div>
 
-        <div class="layout-4-column skills-container">
-
+        <div class="layout-4-columns skills-container">
           <div class="skill">
             <div class="skill__icon">
               <span class="icon-square icon-square_camera">
@@ -117,7 +116,7 @@
 
     <section class="portfolio">
       <div class="wrapper portfolio__wrapper">
-        <h2>Portfolio</h2>
+        <h2 class="portfolio__title">Portfolio</h2>
         <div class="section-line"></div>
 
         <div class="portfolio__button">
@@ -133,12 +132,12 @@
 
           <div class="slider__set">
 
-            <img class= "set__item" src="./src/image/jpeg/portfolio-img1.jpg">
-            <img class= "set__item" src="#">
-            <img class= "set__item" src="#">
-            <img class= "set__item" src="#">
-            <img class= "set__item" src="#">
-            <img class= "set__item" src="#">;
+            <img class= "set__item" src="./src/assets/portfolio/portfolio-img1.jpg">
+            <img class= "set__item" src="./src/assets/portfolio/portfolio-img2.jpg">
+            <img class= "set__item" src="./src/assets/portfolio/portfolio-img3.jpg">
+            <img class= "set__item" src="./src/assets/portfolio/portfolio-img4.jpg">
+            <img class= "set__item" src="./src/assets/portfolio/portfolio-img5.jpg">
+            <img class= "set__item" src="./src/assets/portfolio/portfolio-img6.jpg">;
             
           </div>
 
@@ -151,14 +150,15 @@
     <section class="video">
        
 
-      <div class="wrapper">
-        <h2 class="section-title">Video</h2>
-      <div class="section-line">
+      <div class="wrapper video__wrapper">
+        <h2 class="video-title">Video</h2>
+      <div class="section-line"></div>
 
-        </div>
-
-        <div class="video__player">
-          <iframe class="video-main" src="https://www.youtube.com/embed/zp1BXPX8jcU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="player">
+          <!-- <img  src="./src/assets/video/video-player.png" alt="video-player"> -->
+          <button class="player__screen-button"></button>
+          <video class="player__video" poster="./src/assets/video/video-player.png" src="#"></video>           
+                   
         </div>
 
       </div>
@@ -166,44 +166,71 @@
     </section>
 
     <section class="price">
-      <div class="wrapper">
-        <h2>Price</h2>
+      <div class="wrapper price__wrapper">
+        <h2 class="section-title">Price</h2>
         <div class="section-line"></div>
-
-        <div class="layout-3-column">
-
+        <div class="layout-3-columns">
           <div class="price__block">
-            <h3>Standart</h3>
+            <h3 class="price__title">Standart</h3>
             <h3 class="price-number">500</h3>
-            <p>
+            <p class="price__text">
               One location
               120 photos in color
               12 photos in retouch
-              Make up, visage              
+              Readiness 2-3 weeks
+              Make up, visage                             
             </p>
-            <button class="button__button_colored">Order shooting</button>
-            
+            <button class="button button_colored">Order shooting</button>            
+          </div>
+
+          <div class="price__block">
+            <h3 class="price__title">Premium</h3>
+            <h3 class="price-number">700</h3>
+            <p class="price__text">
+              One or two locations
+              200 photos in color
+              20 photos in retouch
+              Readiness 1-2 weeks
+              Make up, visage             
+            </p>
+            <button class="button button_colored">Order shooting</button>            
+          </div>
+
+          <div class="price__block">
+            <h3 class="price__title">Gold</h3>
+            <h3 class="price-number">1000</h3>
+            <p class="price__text">
+              Tree locations or more
+              300 photos in color
+              50 photos in retouch
+              Readiness 1 weeksMake
+              up, visage, hairstyle          
+            </p>
+            <button class="button button_colored">Order shooting</button>            
           </div>
 
         </div>
+
+        
 
       </div>
 
     </section>
 
+    
     <section class="contacts">
       <div class="wrapper contacts__wrapper">
-        <div class="layout-2-column">
+        <!-- <div class="layout-2-column"> -->
 
           <div class="contacts__form">
-            <h2>Contact me</h2>          
+            <h2 class="contacts-title">Contact me</h2>          
             <input type="email" name="email" placeholder="E-mail">
             <input type="email" name="email" placeholder="Phone">
             <textarea name="message" placeholder="Message" class="contacts__form"></textarea>
             <button class="button button_colored">Send message</button>          
           </div>    
 
-        </div>
+        <!-- </div> -->
         
       </div>
 

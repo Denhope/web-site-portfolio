@@ -4,8 +4,7 @@ html{
 
 body {
   font-size: 1.6rem;
-  font-family:'Merriweather Sans';
-  margin: 0;
+  @extend %font-primery;
 }
 
 h1 {

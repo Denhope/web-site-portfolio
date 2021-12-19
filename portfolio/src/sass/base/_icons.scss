@@ -1,25 +1,6 @@
-// .icon {
-//   cursor: pointer;
-//   display: inline-block;
-// }
-
-// .icon-square {
-//   width: 100px;
-//   height: 100px;
-// }
 .icon-square {
   width: 50px;
   height: 50px;
   border-radius: 19px;
-  // display: flex;
-  align-items: center;
-  // justify-content: center;
-}
-
-.icon-square_camera{
-  background-image: url("../assets/skills/camera.svg");
-}
-
-.skill__icon {
   align-items: center;
 }

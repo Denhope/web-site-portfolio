@@ -18,9 +18,7 @@ h1 {
   font-weight: bold;
   font-size: 60px;
   line-height: 120px;
-  color: #ffffff;
-  margin: 0;
-  /* identical to box height, or 200% */
+  color: #ffffff;  
 }
 
 h2 {

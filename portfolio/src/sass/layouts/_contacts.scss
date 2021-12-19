@@ -1,10 +1,9 @@
 .contacts__wrapper {
   display: flex;
-  background-image: url("../assets/contacts/contacts.png") ;
-  min-height: 500px;
+  flex-direction:row-reverse;  
+  background-image: url("../assets/hero/bg.png");
+  height: auto;
 }
-
-
 
 .contacts__form {
   display: flex;

@@ -17,12 +17,6 @@
   @include font (2rem, 4rem, $wight: 400);
   @extend %font-add;
 }
-// @mixin font ($size, $hight, $wight: bold, $style: normal, $color:$color-text) {
-
-.hero__button {
-  //
-}
-
 .hero__title {
   margin: 0 0 10px;
   max-width: 500px;
