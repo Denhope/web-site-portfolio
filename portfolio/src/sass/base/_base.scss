@@ -4,59 +4,31 @@ html{
 
 body {
   font-size: 1.6rem;
-  font-family:'Merriweather Sans', Verdana, sans-serif;
+  font-family:'Merriweather Sans';
   margin: 0;
 }
 
 h1 {
-  font-family: Merriweather;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 60px;
-  line-height: 120px;
-  color: $color-text;
-  margin: 0;
-  /* identical to box height, or 200% */
-
+  @include font (6rem, 12rem);  
 }
+
 h2 {
-  font-family: Merriweather;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 80px;
-  color: $color-section-title;
-  text-align: center;
+  @include font (4rem, 8rem, $color: $color-section-title);
+  text-align: center;  
 }
 
 h3 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 56px;
-  /* identical to box height, or 200% */
-  // text-align: center;
-  // color: $color-text;
+  @include font (2.8rem, 5.6rem);
 }
 
 h4 {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 40px;
-  /* identical to box height, or 200% */
-  // text-align: center;
-  color: $color-text;
+  @include font (2rem, 4rem);
+  @extend %font-add;
 }
 
 p {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 36px;
-  color: $color-text;
+  @include font (2rem, 4rem, $wight: normal);
+  @extend %font-add;
   text-align: center;
 }
 

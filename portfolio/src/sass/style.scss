@@ -2,10 +2,12 @@
 //Abstract
 @import "abstract/constants";
 @import "abstract/placeholders";
+@import "abstract/mixins";
 
 
 
 //Base
+@import "base/normalize";
 @import "base/base";
 @import "base/buttons";
 @import "base/icons";
@@ -25,7 +27,7 @@
 @import "components/price";
 @import "components/video";
 @import "components/skills";
-// @import "components/tools";
+@import "components/navigation";
 
 
 
