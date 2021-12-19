@@ -1,3 +1,7 @@
+.button {
+  transition: all 0.3s ease-out;
+}
+
 html {
   font-size: 10px;
 }
@@ -14,6 +18,7 @@ h1 {
   font-size: 60px;
   line-height: 120px;
   color: #ffffff;
+  margin: 0;
   /* identical to box height, or 200% */
 }
 
@@ -61,7 +66,6 @@ p {
   line-height: 4rem;
   border-radius: 0px;
   cursor: pointer;
-  transition: all 0.3s;
 }
 
 .button_bordered {
@@ -89,19 +93,27 @@ p {
 }
 
 .header {
-  background-color: blue;
   padding: 20px 0 20 0;
+  margin-bottom: -90px;
 }
 
 .header__wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+}
+
+.header__navigation {
+  display: flex;
 }
 
 .navigation,
 .header__language {
   display: flex;
+}
+
+.header__language {
+  padding-right: 20px;
+  padding-left: 15px;
 }
 
 .navigation__link,
@@ -118,21 +130,44 @@ p {
   color: #ffffff;
 }
 
-.language__link_selected {
-  list-style: none;
-  padding: 0 15px;
-  cursor: pointer;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 50px;
+.language__link,
+.language__slash {
+  padding: 0px 3.5px;
+}
+
+.link_selected {
   color: #bdae82;
+}
+
+.header__logo {
+  padding-left: 20px;
 }
 
 .hero__wrapper {
   background-image: url("../assets/hero/bg.png");
-  min-height: 500px;
+  height: 910px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50rem;
+  max-height: 33rem;
+  padding: 8rem 16rem;
+}
+
+.content__text {
+  max-width: 47rem;
+  max-height: 12rem;
+}
+
+.hero__button {
+  margin-top: 20px;
+}
+
+.hero__title {
+  margin-bottom: 10px;
 }
 
 .contacts__wrapper {

@@ -1,4 +1,27 @@
 .hero__wrapper {
+  
   background-image: url("../assets/hero/bg.png");
-  min-height: 500px;
+  height: 910px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50rem;
+  max-height: 33rem;
+  padding: 8rem 16rem;  
+}
+
+.content__text {  
+  max-width: 47rem;
+  max-height: 12rem; 
+}
+
+.hero__button {
+  margin-top: 20px;
+}
+
+.hero__title {
+  margin-bottom: 10px;
 }
