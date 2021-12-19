@@ -13,6 +13,7 @@ body {
 }
 
 h1 {
+  font-family: Merriweather;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -23,6 +24,7 @@ h1 {
 }
 
 h2 {
+  font-family: Merriweather;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -46,15 +48,17 @@ h4 {
   font-size: 20px;
   line-height: 40px;
   /* identical to box height, or 200% */
+  color: #ffffff;
 }
 
 p {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 50px;
+  font-size: 18px;
+  line-height: 36px;
   color: #ffffff;
+  text-align: center;
 }
 
 .button {
@@ -85,6 +89,21 @@ p {
 
 .button_bordered:hover {
   color: #ffffff;
+}
+
+.icon-square {
+  width: 50px;
+  height: 50px;
+  border-radius: 19px;
+  align-items: center;
+}
+
+.icon-square_camera {
+  background-image: url("../assets/skills/camera.svg");
+}
+
+.skill__icon {
+  align-items: center;
 }
 
 .wrapper {
@@ -160,6 +179,9 @@ p {
 .content__text {
   max-width: 47rem;
   max-height: 12rem;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: left;
 }
 
 .hero__button {
@@ -185,12 +207,31 @@ p {
   background-color: #000000;
 }
 
+.layout-4-column {
+  display: flex;
+}
+
 .price .wrapper {
   background-color: #000000;
 }
 
 .video .wrapper {
   background-color: #000000;
+}
+
+.skills__wrapper {
+  background-color: #000000;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.skill__text {
+  padding: 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

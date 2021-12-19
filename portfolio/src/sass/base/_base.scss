@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  // font-family: Merriweather;
+  font-family: Merriweather;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
@@ -20,6 +20,7 @@ h1 {
 
 }
 h2 {
+  font-family: Merriweather;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -46,15 +47,16 @@ h4 {
   line-height: 40px;
   /* identical to box height, or 200% */
   // text-align: center;
-  // color: $color-text;
+  color: $color-text;
 }
 
 p {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 50px;
+  font-size: 18px;
+  line-height: 36px;
   color: $color-text;
+  text-align: center;
 }
 
