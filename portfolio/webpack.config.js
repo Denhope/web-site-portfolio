@@ -14,7 +14,7 @@ module.exports = (env, options) => {
       watch: !isProduction,
       entry: ['./src/index.js', './src/sass/style.scss'],
       output: {
-          path: path.join(__dirname, '/portfolio'),
+          path: path.join(__dirname, '/dist'),
           filename: 'script.js',
           assetModuleFilename: 'assets/[hash][ext]',
       },
