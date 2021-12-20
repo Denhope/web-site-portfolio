@@ -1,6 +1,6 @@
 .skills__wrapper {
   background-color: $color-background;
-  padding: 20px 20px 10px;
+  padding: 0 20px;
 }
 
 .skill{
@@ -13,10 +13,20 @@
 .skill__text {
   margin: 0;
   padding: 0;
+  @include font (1.8rem, 3.6rem, $wight: 400);
+  @extend %font-add;
+/* or 200% */
+
+text-align: center;
 }
 
 .skills__title {
-  margin: auto;
+  margin: 100px 0 60px 0;
+  font-weight: 700;
+}
+
+.skill__title {
+  margin: 60px 0 20px 0;
 }
 
 .skills-container {

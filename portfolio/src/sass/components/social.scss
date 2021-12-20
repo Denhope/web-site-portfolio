@@ -1,31 +1,24 @@
 .social {
   display: flex;
-  // align-self: flex-end;
   gap: 20px;
-  width: 300px;
-  height: 48px;
-  // margin-left: auto;
-  // margin-bottom: 15px;
   list-style: none; 
   margin: 0;
 }
 
 .social__link {
   display: block;
-  width: 48px;
-  height: 48px;
+  // width: 48px;
+  // height: 48px;
   box-sizing: border-box;
-
-  border: 1px solid #666666;
-  border-radius: 50%;
-
   transition: all 0.3s;
+  align-items: center;
+  padding: auto;
 }
 
-.social_instagram {
-  // background: url('./src/assets/footer/insta.svg');
-    // background-color:rebeccapurple;
-}
+// .social_instagram {  
+//   // background: url('./src/assets/footer/insta.svg');
+//     // background-color:rebeccapurple;
+// }
 
 .social__items:hover {
   cursor: pointer;
