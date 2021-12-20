@@ -8,7 +8,7 @@
 }
 
 .price__title {
-  margin: auto;
+  margin: 100px 0 60px;
 }
 
 .price-block {
@@ -24,7 +24,6 @@
   max-width: 364px;
   padding: 0 75px;
   margin: 0 0 40px;  
-  font-family: Inter; 
   letter-spacing: 0em;
   text-align: center;
   @include font (1.8rem, 3.6rem, $wight: 400);
