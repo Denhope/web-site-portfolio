@@ -14,7 +14,7 @@
 }
 
 .contacts__title {
-  margin: 0;  
+  margin: 0 0 30px;  
   text-align: left;
 }
 
@@ -22,12 +22,12 @@
 .contacts__phone {
   margin: 10px 0; 
   border: 2px solid $color-primery;  
-  letter-spacing: 0em;
   text-align: left;
   border-radius: 0px;
   background: rgba(0, 0, 0, 0.5);
   @include font (2rem, 4rem, $color: $color-white, $wight: normal);
   @extend %font-add;
+  // padding: 0;
 }
 
 .contacts__message {
@@ -43,6 +43,6 @@
   @extend %font-add;
 }
 
- ::placeholder {
+::placeholder {
   color: $color-primery;
 }
