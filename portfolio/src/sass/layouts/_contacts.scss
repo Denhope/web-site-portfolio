@@ -23,19 +23,19 @@
   margin: 10px 0; 
   border: 2px solid $color-primery;  
   text-align: left;
-  border-radius: 0px;
+  padding: 5px 226px 5px 20px;
   background: rgba(0, 0, 0, 0.5);
   @include font (2rem, 4rem, $color: $color-white, $wight: normal);
   @extend %font-add;
-  // padding: 0;
 }
 
 .contacts__message {
   margin: 10px 0 30px;
+  padding: 5px 226px 5px 20px;
   height: 100px;
-  width: 450px;
+  width: 100%;
 
-  border-radius: 0px;
+  // border-radius: 0px;
   border: 2px solid $color-primery;  
   letter-spacing: 0em;
   text-align: left;

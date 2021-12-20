@@ -1,5 +1,5 @@
 .button {
-  width: 220px;
+  min-width: 220px;
   padding: 6px 0px;
   font-family: Inter;
   font-style: normal;
@@ -7,9 +7,7 @@
   font-size: 2rem;
   line-height: 4rem; 
   cursor: pointer; 
-  text-align: center;
-
-  
+  text-align: center; 
   
   @extend %transition;
 
@@ -31,10 +29,14 @@
   }
 }
 
+.contacts_botton {
+  max-width: 220px;
+}
+
 .player__screen-button {
   position: absolute;
-  top: calc(50% - 155px);
-  left: calc(50% - 110px);
+  top: calc(50% - 110px);
+  left: calc(50% - 50px);
   z-index: 2;
   background-color: transparent;
   // background-image: url("../abstract/play-btn.svg");
