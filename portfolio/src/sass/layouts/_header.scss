@@ -1,17 +1,26 @@
 .header {
-  padding: 20px 0 20 0;
-  margin-bottom: -90px;
+   
+  // padding: 20px 0 20 0;
+  
 }
 
 .header__wrapper {
+  margin-bottom: -90px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-height: 90px;
+  
 }
 
 .header__navigation {
   display: flex;
   align-items: center;
+  @include media-tablet {
+    gap: 20px;
+  }
+  
 }
 
 .navigation,
@@ -35,7 +44,7 @@
 }
 
 .header__logo {
-  margin: 20px;
+  // padding: 20px 0;
   cursor: pointer;
   &:hover {
     fill: $color-primery;     

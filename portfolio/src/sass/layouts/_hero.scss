@@ -1,13 +1,28 @@
 .hero__wrapper {  
+  max-height: 910px;
   display: flex;
   background-image: url("../assets/hero/bg.png");
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat; 
+  @include media-tablet {
+    max-height: 590px;
+  }
+  @include media-mobile {
+    max-height: 400px;
+  }
   }
 
 .hero__content {
+  // position: relative;
   display: flex;
   flex-direction: column;
+  // padding-top: 250px;
+  // padding-left: 80px;
   margin: 250px 860px 330px 80px;
+  @include media-tablet {
+    margin: 150px 279px 166px 20px;    
+
+  }
 }
 
 .hero__text {  
@@ -17,9 +32,20 @@
 
   @include font (2rem, 4rem, $wight: 400);
   @extend %font-add;
+
+  @include media-mobile{
+    @include font (1rem, 2rem, $wight: 200);
+  }
 }
 .hero__title {
   margin: 0 0 10px;
   max-width: 500px;
-  max-height: 120px;
+  // max-height: 120px;
+  @include media-tablet {
+    @include font (3.2rem, 6.4rem, $wight: 400);
+  }
+
+  @include media-mobile {
+    @include font (2.2rem, 4.4rem, $wight: 400);
+  }
 }

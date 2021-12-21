@@ -12,11 +12,20 @@
   max-width: 450px;
   margin: 59px 40px 196px 950px;
   padding: 0;
+  @include media-tablet {
+    justify-content: center;
+    margin: auto;
+
+  }
 }
 
 .contacts__title {
   margin: 0 0 30px;  
   text-align: left;
+  @include media-tablet {
+    text-align: center;
+
+  }
 }
 
 .contacts__email,

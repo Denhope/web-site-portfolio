@@ -2,6 +2,7 @@
   max-width: $content-width;
   margin: auto;
   @include media-tablet {
+    max-width: $tablet-width;
     // padding: 0 26px;
   }
 }

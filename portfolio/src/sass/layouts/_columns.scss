@@ -4,9 +4,13 @@
 
 .layout-3-columns {
   @include columns($width: 30%);
+  display: flex;
+  // justify-content: center;
+}
+.layout-2-column {  
+  @include columns($width: 48%);
 }
 
-.layout-2-column {
-  
-  @include columns($width: 48%);
+.layout-1-column {  
+  @include columns($width: 100%);
 }
