@@ -4,18 +4,24 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  @include media-mobile {
+    flex-wrap: wrap;
+    // justify-items: center;
+    // align-items: center;
+  }
     
 }
 
 .footer__data {
   display: flex;
   justify-content: space-between;
-  // max-width: 182px;
-  // width: auto;
-  // align-items: center;
   gap: 20px;
   margin: 0;
   padding: 50px 0;
+  @include media-mobile {
+    padding: 0px;
+    align-items: center;
+  }
 }
 
 .copyright-rs,

@@ -6,20 +6,32 @@
 .header__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__navigation {
   display: flex;
+  align-items: center;
 }
 
 .navigation,
 .header__language {
-  display: flex;  
+  display: flex; 
+  
+}
+.navigation {
+  @include media-tablet {
+    display: none;
+  } 
 }
 
 .header__language {
   padding-right: 20px;
   padding-left: 15px;
+  @include media-tablet {
+    flex-direction: flex-end;
+    ;
+  } 
 }
 
 .header__logo {

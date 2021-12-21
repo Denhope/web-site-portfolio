@@ -1,7 +1,8 @@
 .hero__wrapper {  
   display: flex;
   background-image: url("../assets/hero/bg.png");
-}
+  background-position: center;
+  }
 
 .hero__content {
   display: flex;
@@ -19,6 +20,6 @@
 }
 .hero__title {
   margin: 0 0 10px;
-  width: 500px;
+  max-width: 500px;
   max-height: 120px;
 }
