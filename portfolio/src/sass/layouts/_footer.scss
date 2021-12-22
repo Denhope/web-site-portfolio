@@ -4,10 +4,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+
+  @include media-tablet {
+    flex-direction: column;   
+  }
+
   @include media-mobile {
     flex-wrap: wrap;
-    // justify-items: center;
-    // align-items: center;
+    
   }
     
 }
@@ -18,6 +22,10 @@
   gap: 20px;
   margin: 0;
   padding: 50px 0;
+  @include media-tablet {
+    padding: 0px 0;
+    
+  }
   @include media-mobile {
     padding: 0px;
     align-items: center;
@@ -30,7 +38,5 @@
 .label {
   @include font (2rem, 5rem, $wight: 400,);
   @extend %font-add; 
-  margin: 0;
-  // padding: 50px 0;
-  
+  margin: 0; 
 }

@@ -4,17 +4,19 @@
 
 .price-container {
   justify-content: center;
-  // align-items: center;
   gap: 20px;
-  padding: 20px 20px 100px;
-  // @include media-tablet {
-  //   @include columns($width: 420px);
-  // }
+  padding: 20px 20px 100px;  
 }
 
 .price__title {
   margin: 100px 0 60px;
-  // max-width: 700px;
+  
+  @include media-tablet {
+    margin: 80px 0 50px 0;
+  }
+  @include media-mobile {
+    margin: 40px 0 10px;
+  }
 }
 
 .price-block {
@@ -26,6 +28,12 @@
   justify-content: space-between;
   border: solid 1px $color-primery;
   padding: 43px 0;
+  @include media-mobile {
+      min-width: auto;
+      min-height: auto;
+      padding: 10px 0;
+     
+  }
 }
 
 .price-block__text {
@@ -36,10 +44,18 @@
   text-align: center;
   @include font (1.8rem, 3.6rem, $wight: 400);
   @extend %font-add;
+  @include media-mobile {
+    padding: 0 20px;
+    margin: 0 0 10px;
+  }
+  
 }
 
 .price-block__title {
   margin: auto;
+  @include media-mobile {
+    margin: 0 0 0;
+  }
 }
 
 .price-block__number {
@@ -47,4 +63,7 @@
   margin-bottom: 20px;
   color: $color-primery;
   @include font (2.4rem, 4.8rem, $wight: 700, $color:$color-primery);
+  @include media-mobile {
+    margin: 0;
+  }
 }

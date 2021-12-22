@@ -31,6 +31,9 @@
 
 .contacts_botton {
   max-width: 220px;
+  @include media-mobile {
+    max-width: 100%;
+  }
 }
 
 .player__screen-button {
