@@ -6,14 +6,13 @@
   padding: 0 20px;
 
   @include media-tablet {
-    flex-direction: column;   
+    flex-direction: column;  
+    padding: 20px 0; 
   }
 
   @include media-mobile {
-    flex-wrap: wrap;
-    
-  }
-    
+    flex-wrap: wrap;    
+  }    
 }
 
 .footer__data {
@@ -33,10 +32,22 @@
 }
 
 .copyright-rs,
-.year,
-.github,
 .label {
+  margin: 0;
   @include font (2rem, 5rem, $wight: 400,);
   @extend %font-add; 
-  margin: 0; 
+  
+}
+
+.year {
+  margin: 0;
+  @include font (1.8rem, 5rem, $wight: 400,);
+  @extend %font-add; 
+
+}
+
+.github {
+  margin: 0;
+  @include font (1.9rem, 5rem, $wight: 400,);
+  @extend %font-add; 
 }
