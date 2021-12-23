@@ -56,7 +56,7 @@
   padding: 5px 226px 5px 20px;
   height: 100px;
   width: 100%;
- border: 2px solid $color-primery;  
+  border: 2px solid $color-primery;  
   letter-spacing: 0em;
   text-align: left;
   background: rgba(0, 0, 0, 0.5);
@@ -64,6 +64,14 @@
   @extend %font-add;
 }
 
+.contacts__email,
+.contacts__phone,
+.contacts__message {
+  @include media-mobile {
+     font-size: 1.2rem;
+  }
+ 
+}
 ::placeholder {
   color: $color-primery;
 }
