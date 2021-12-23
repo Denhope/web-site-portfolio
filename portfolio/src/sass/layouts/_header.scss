@@ -47,9 +47,8 @@
 }
 
 .header__logo {
-  // padding: 20px 0;
   cursor: pointer;
-  &:hover {
-    fill: $color-primery;     
-  }
+  @include media-mobile {   
+    width: 35px;   
+  } 
 }
