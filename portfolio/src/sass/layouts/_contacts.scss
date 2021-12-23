@@ -1,26 +1,27 @@
 .contacts__wrapper {
   display: flex;
-  flex-direction:row-reverse;  
   background-image: url("../assets/contacts/contacts.png");
   background-position: center center;
-   min-height: 700px;
-   justify-content: right;
-   padding: 59px 40px 0;
-   @include media-tablet {     
-    justify-content: center;   
+  min-height: 700px;
+  justify-content: right;
+  padding: 59px 40px 0;
 
-   }
+  @include media-tablet {     
+    justify-content: center; 
+    min-height: 600px; 
+
+  }
 }
 
 .contacts__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: 450px;
   max-height: 445px;
   @include media-tablet {
     max-width: 450px;
     max-height: 429px;
+    align-items: center;
   }
 
   @include media-mobile {
