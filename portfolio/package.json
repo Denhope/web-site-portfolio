@@ -18,6 +18,7 @@
   "bugs": {},
   "homepage": "",
   "devDependencies": {
+    "image-webpack-loader": "^8.0.1",
     "mini-css-extract-plugin": "^2.4.5",
     "webpack": "^5.65.0"
   },
