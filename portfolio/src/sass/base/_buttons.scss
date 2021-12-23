@@ -41,9 +41,23 @@
   top: calc(50% - 110px);
   left: calc(50% - 50px);
   z-index: 2;
-  background-color: transparent;
-  // background-image: url("../abstract/play-btn.svg");
-  // background: transparent url("../src/assets/video/play-btn 1.png");
+  background-color: transparent;  
   border: none;
   cursor: pointer;
+ 
+  @include media-tablet {
+  img {
+    width: 75px;
+  }
+    top: calc(50% - 55px);
+    left: calc(50% - 30px);
+  }
+
+  @include media-mobile {
+    img {
+      width: 50px;
+    }
+      top: calc(50% - 35px);
+      left: calc(50% - 30px);
+    }
 }
