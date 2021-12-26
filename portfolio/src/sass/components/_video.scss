@@ -1,7 +1,10 @@
 .video__wrapper{
   background-color: $color-background;
-  padding: 0 20px 0;   
-}           
+  @include media-tablet {
+    padding: 0, -20px;
+  }
+}
+
 
 .video__title {
   margin: 100px 0 60px;

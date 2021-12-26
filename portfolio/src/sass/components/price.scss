@@ -3,9 +3,10 @@
 }
 
 .price-container {
-  justify-content: center;
+  align-items: center;
+  justify-content:center;
   gap: 20px;
-  padding: 20px 20px 100px;  
+  padding: 20px 0px 100px;  
 }
 
 .price__title {
@@ -20,7 +21,7 @@
 }
 
 .price-block {
-  min-width: 420px;
+  min-width: 450px;
   min-height: 505px;
   display: flex;
   flex-direction: column;
@@ -29,9 +30,9 @@
   border: solid 1px $color-primery;
   padding: 43px 0;
   @include media-mobile {
-      min-width: auto;
-      min-height: auto;
-      padding: 10px 0;
+    min-width: auto;
+    min-height: auto;
+    padding: 10px 0;
      
   }
 }

@@ -1,18 +1,18 @@
-.hero__wrapper { 
+.hero-container { 
   padding: 0 0 0 80px; 
-  height: 910px;
+  min-height: 820px;
   display: flex;
-  background-image: url("../assets/hero/bg.png");
-  background-position: center center;
+  background: url("../assets/hero/bg.png");
+  background-position: center -90px;
   background-repeat: no-repeat; 
   @include media-tablet {
-    height: 590px;
-    padding: 0 0 0 20px; 
+    min-height: 590px;
+    padding: 0 0 0 60px; 
   }
   @include media-mobile {
     max-height: 400px;
   }
-  }
+}
 
 .hero__content {
   max-width: 500px;
@@ -47,7 +47,6 @@
 .hero__title {
   margin: 0 0 10px;
   max-width: 500px;
-  // max-height: 120px;
   @include media-tablet {
     @include font (3.2rem, 6.4rem, $wight: 400);
   }

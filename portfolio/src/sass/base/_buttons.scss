@@ -1,7 +1,7 @@
 .button {
   min-width: 220px;
   padding: 6px 0px;
-  font-family: Inter;
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 2rem;
@@ -12,7 +12,7 @@
   @extend %transition;
 
   &_bordered {
-    background-color: $color-background;
+    background-color: transparent;
     border:  1px solid $color-primery;
     color: $color-primery;
     &:hover{
@@ -22,6 +22,7 @@
 
   &_colored {
     background-color: $color-primery;
+    border:  1px solid $color-primery;
     color: $color-primery-button;
     &:hover{
       color: $color-hovered;
@@ -44,6 +45,10 @@
   background-color: transparent;  
   border: none;
   cursor: pointer;
+  &:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  }
  
   @include media-tablet {
   img {

@@ -9,7 +9,6 @@
   @include media-tablet {     
     justify-content: center; 
     min-height: 600px; 
-
   }
 }
 
@@ -68,7 +67,7 @@
 .contacts__phone,
 .contacts__message {
   @include media-mobile {
-     font-size: 1.2rem;
+    font-size: 1.2rem;
   }
  
 }

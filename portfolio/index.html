@@ -12,14 +12,10 @@
 
 <body>
   <header class="header">
-
     <div class="wrapper header__wrapper">
-
-      <img class="header__logo" src="./src/assets/header/logo.svg" alt="header-logo">
-        
+      <img class="header__logo" src="./src/assets/header/logo.svg" alt="header-logo">        
       <nav class="header__navigation">
-
-        <ul class="navigation">
+        <ul class="navigation__list">
           <li class="navigation__link">Skills
             <!-- <a href="#skills">Skills</a> -->
           </li>
@@ -35,39 +31,32 @@
           <li class="language__link">ru</li>   
         </ul>    
         
-        <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
-              
-      </nav>
-
-      
+        <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>              
+      </nav>      
       
     </div>   
-
   </header>
 
   <main>
     <section class="hero">
-
-      <div class="wrapper hero__wrapper">
+      <div class="wrapper hero-container">
         <div class="hero__content">
           <h1 class="hero__title">Alexa Rise</h1>
           <p class="hero__text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
           <div class="hero__button">
             <button class="button button_colored">Hire me</button>
           </div>
-        </div>      
+        </div>    
 
       </div>
 
     </section>
 
     <section class="skills">
-
       <div class="wrapper skills__wrapper">
-
-        <h2 class="skills__title">Skills
-          <span class="section-line"></span>
-        </h2>       
+        <div class="skills__title title">
+          <h2 class="title-text">Skills</h2>
+        </div>          
 
         <div class="layout-4-columns skills-container">
           <div class="skill">
@@ -110,7 +99,6 @@
             <p class="skill__text">Professional sounds recording for video, advertising, portfolio</p>
 
           </div>
-
         </div>
       </div>
 
@@ -118,30 +106,23 @@
 
     <section class="portfolio">
       <div class="wrapper portfolio__wrapper">
-        <h2 class="portfolio__title">Portfolio
-          <span class="section-line"></span>
-        </h2>
+        <h2 class="portfolio__title">Portfolio</h2>
        
         <div class="portfolio__buttons">
-
           <button class="button button_bordered">Winter</button>
           <button class="button button_bordered">Spring</button>
           <button class="button button_bordered">Summer</button>
-          <button class="button button_colored">Autumn</button>
-          
+          <button class="button button_colored">Autumn</button>          
         </div>
 
         <div class="portfolio__slider">
-
           <div class="slider__set">
-
-            <img class= "set__item" src="./src/assets/portfolio/portfolio-img1.jpg">
-            <img class= "set__item" src="./src/assets/portfolio/portfolio-img2.jpg">
-            <img class= "set__item" src="./src/assets/portfolio/portfolio-img3.jpg">
-            <img class= "set__item" src="./src/assets/portfolio/portfolio-img4.jpg">
-            <img class= "set__item" src="./src/assets/portfolio/portfolio-img5.jpg">
-            <img class= "set__item" src="./src/assets/portfolio/portfolio-img6.jpg">;
-            
+            <img class= "set__item" src="./src/assets/portfolio/portfolio-img1.jpg" alt="foto">
+            <img class= "set__item" src="./src/assets/portfolio/portfolio-img2.jpg" alt="foto">
+            <img class= "set__item" src="./src/assets/portfolio/portfolio-img3.jpg" alt="foto">
+            <img class= "set__item" src="./src/assets/portfolio/portfolio-img4.jpg" alt="foto">
+            <img class= "set__item" src="./src/assets/portfolio/portfolio-img5.jpg" alt="foto">
+            <img class= "set__item" src="./src/assets/portfolio/portfolio-img6.jpg" alt="foto">;            
           </div>
 
         </div>        
@@ -150,14 +131,10 @@
 
     </section>
 
-    <section class="video">       
+    <section class="video">     
 
-      <div class="wrapper video__wrapper">
-        
-        <h2 class="video__title">Video
-          <span class="section-line"></span>
-        </h2>
-      
+      <div class="wrapper video__wrapper">        
+        <h2 class="video__title">Video<h2>      
         <div class="player">
           <!-- <img  src="./src/assets/video/video-player.png" alt="video-player"> -->
           <button class="player__screen-button">
@@ -165,7 +142,6 @@
           </button>
           <video class="player__video" poster="./src/assets/video/video-player.png" src="#"></video>         
         </div>
-
       </div>
 
     </section>
@@ -173,7 +149,6 @@
     <section class="price">
       <div class="wrapper price__wrapper">
         <h2 class="price__title">Price</h2>
-        <div class="section-line"></div>
         <div class="layout-3-columns price-container">
           <div class="price-block">
             <h3 class="price-block__title">Standart</h3>

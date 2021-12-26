@@ -1,12 +1,11 @@
 .portfolio__wrapper {
   justify-content: center;
   background-color: $color-background;
-  max-width: 1400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   @include media-tablet {
-    max-width: 450px;    
+     
   } 
 }
 
@@ -33,23 +32,22 @@
 }
 
 .portfolio__slider {
-  max-height: 100%;
   @include media-tablet {
-    max-height: 3485px;  
+    
   }
 
   @include media-mobile {
     max-width: 100%;
+    
   }
 }
 
-.slider__set {
+.slider__set {  
   max-width: 100%;
   display: flex;
   flex-wrap: wrap;  
   justify-content: center;
-  gap: 20px;
- 
+  gap: 25px;
 }
 
 .set__item {
@@ -57,8 +55,13 @@
   width: auto;
 
   @include media-mobile {
-      max-width: 370px;
-      max-height: auto;
+    max-width: 370px;
+    max-height: auto;
   }
+
+  @include media-mobilesmall {
+    max-width: 300px;
+    max-height: auto;
+}
 
 }
