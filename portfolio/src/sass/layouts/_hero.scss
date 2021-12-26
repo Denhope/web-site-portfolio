@@ -51,7 +51,7 @@
     @include font (3.2rem, 6.4rem, $wight: 400);
   }
 
-  @include media-mobile {
-    @include font (2.2rem, 4.4rem, $wight: 400);
-  }
+  // @include media-mobile {
+  //   @include font (2.2rem, 4.4rem, $wight: 400);
+  // }
 }

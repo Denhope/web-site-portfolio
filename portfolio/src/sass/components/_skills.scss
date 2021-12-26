@@ -17,6 +17,7 @@
     @include columns($width: 48%);    
   }
   @include media-mobile {
+    justify-content: center;
    padding: 10px 10px;
   }  
 }

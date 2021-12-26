@@ -10,6 +10,9 @@ body {
 
 h1 {
   @include font (6rem, 12rem);  
+  @include media-tablet {
+    @include font (3.2rem, 6.4rem, $wight: 400);
+  }
 }
 
 h2 {
