@@ -32,22 +32,21 @@
 }
 
 .copyright-rs,
+.github,
 .label {
-  margin: 0;
-  @include font (2rem, 5rem, $wight: 400,);
-  @extend %font-add; 
-  
-}
-
+  margin: 0;  
+  a {
+    @include font (2rem, 5rem, $wight: 400,);
+    @extend %font-add;  
+    &:hover {
+      color: $color-primery;
+      @extend %transition;
+    }
+  }
+} 
 .year {
   margin: 0;
   @include font (1.8rem, 5rem, $wight: 400,);
   @extend %font-add; 
 
-}
-
-.github {
-  margin: 0;
-  @include font (1.9rem, 5rem, $wight: 400,);
-  @extend %font-add; 
 }
