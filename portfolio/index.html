@@ -16,13 +16,21 @@
       <img class="header__logo" src="./src/assets/header/logo.svg" alt="header-logo">        
       <nav class="header__navigation">
         <ul class="navigation__list">
-          <li class="navigation__link">Skills
-            <!-- <a href="#skills">Skills</a> -->
+          <li class="navigation__link">
+            <a href="#skills">Skills</a>
           </li>
-          <li class="navigation__link">Portfolio</li>
-          <li class="navigation__link">Video</li>
-          <li class="navigation__link">Price</li>
-          <li class="navigation__link">Contacts</li>
+          <li class="navigation__link">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li class="navigation__link">
+            <a href="#video">Video</a>
+          </li>
+          <li class="navigation__link">
+            <a href="#price">Price</a>
+          </li>
+          <li class="navigation__link">
+            <a href="#contacts">Contacts</a>
+          </li>
         </ul>  
 
         <ul class="header__language">
@@ -38,7 +46,7 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class ="hero">
       <div class="wrapper hero-container">
         <div class="hero__content">
           <h1 class="hero__title">Alexa Rise</h1>
@@ -52,7 +60,7 @@
 
     </section>
 
-    <section class="skills">
+    <section class id="skills">
       <div class="wrapper skills__wrapper">
         <div class="skills__title title">
           <h2 class="title-text">Skills</h2>                  
@@ -103,7 +111,7 @@
 
     </section>
 
-    <section class="portfolio">
+    <section class id="portfolio">
       <div class="wrapper portfolio__wrapper">
         <div class="title portfolio-title">
           <h2 class="title-text">Portfolio</h2>                  
@@ -132,25 +140,22 @@
 
     </section>
 
-    <section class="video">     
-
+    <section class id="video">     
       <div class="wrapper video__wrapper">        
         <div class="video__title title">
           <h2 class="title-text">Video</h2>                  
         </div>  
-
         <div class="player">
           <!-- <img  src="./src/assets/video/video-player.png" alt="video-player"> -->
           <button class="player__screen-button">
             <img  src="./src/assets/video/play-btn.svg" alt="play-btn">
           </button>
-          <video class="player__video" poster="./src/assets/video/video-player.png" src="#"></video>         
+          <video class="player__video" poster="./src/assets/video/video-player.jpg" src="#"></video>         
         </div>
       </div>
-
     </section>
 
-    <section class="price">
+    <section class id="price">
       <div class="wrapper price__wrapper">
         <div class="price__title title">
           <h2 class="title-text">Price</h2>                  
@@ -200,7 +205,7 @@
       </div>
     </section>
     
-    <section class="contacts">
+    <section class id="contacts">
       <div class="wrapper contacts__wrapper">
         <div class="contacts__container">
           <h2 class="contacts__title">Contact me</h2>          
@@ -212,10 +217,9 @@
           <input class="contacts__message" id="contacts-message" maxlength="1500" minlength="5"
                       name="massage" pattern="[A-Za-zА-Яа-я ]{5,1500}" placeholder="Message" required type="text">
           <button class="button button_colored contacts_botton">Send message</button>          
-        </div>    
+        </div> 
 
       </div>
-
     </section>   
 
   </main>
@@ -224,7 +228,7 @@
     <div class="wrapper footer__wrapper">
       <div class="footer__data">
         <p class="label">©</p>
-        <p class="year">2021</p>
+        <p class="year">2022</p>
         <p class="github">
           <a class="footer-link" href="https://github.com/Denhope">github</a>
         </p>
