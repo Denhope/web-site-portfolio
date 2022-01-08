@@ -1,12 +1,13 @@
 .price__wrapper {
   background-color: $color-background;
+  padding-top: 100px;
 }
 
 .price-container {
   align-items: center;
   justify-content:center;
   gap: 20px;
-  padding: 20px 0px 100px;  
+  padding: 60px 0px 90px;  
 }
 
 .price-block {
@@ -16,7 +17,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: solid 1px $color-primery;
+  border: solid 3px $color-primery;
   padding: 43px 0;
   @include media-mobile {
     min-width: auto;
@@ -42,7 +43,7 @@
 }
 
 .price-block__title {
-  margin: auto;
+  margin: 0 auto;
   @include media-mobile {
     margin: 0 0 0;
   }

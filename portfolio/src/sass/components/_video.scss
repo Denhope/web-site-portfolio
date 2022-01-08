@@ -1,12 +1,14 @@
 .video__wrapper{
   background-color: $color-background;
+  padding-top: 100px;
   @include media-tablet {
     padding: 0, -20px;
-  }
+  }  
 }
 
 .player {
   position: relative;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   max-width: 1440px;

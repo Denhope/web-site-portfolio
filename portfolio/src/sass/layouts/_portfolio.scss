@@ -1,12 +1,14 @@
 .portfolio__wrapper {
   justify-content: center;
   background-color: $color-background;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   @include media-tablet {
      
   } 
+  
 }
 
 .portfolio__title {
@@ -22,7 +24,7 @@
 }
 
 .portfolio__buttons {
-  margin-bottom: 60px;
+  padding: 60px 0;
   @include media-tablet {
     max-width: 445px;
   }  
@@ -44,6 +46,7 @@
 
 .slider__set {  
   max-width: 100%;
+  max-height: 1145px;
   display: flex;
   flex-wrap: wrap;  
   justify-content: center;

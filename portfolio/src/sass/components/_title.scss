@@ -1,5 +1,5 @@
 .section-title {
-  margin: 100px auto 60px;
+margin: 0 auto;
   align-items: center;
  
   @include media-tablet {
@@ -12,9 +12,8 @@
   position: relative;
   text-align: center;
   width: 50%;
-  overflow-x: hidden;
-  
- 
+  overflow-x: hidden; 
+
   &:after {
     background-color: $color-primery;
     content: "";

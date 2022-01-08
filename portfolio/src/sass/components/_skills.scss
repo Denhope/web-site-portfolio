@@ -2,6 +2,7 @@
   align-items: center;
   justify-items: center;
   background-color: $color-background;
+  padding-top: 100px;
   @include media-tablet {
     padding: 0 0px 40px;
   }  
@@ -10,6 +11,7 @@
 .skills-container {
   justify-content: space-between;
   row-gap: 10px;
+  padding-top: 60px;
   @include  media-laptop {
     @include columns($width: 48%);    
   }
@@ -44,7 +46,7 @@
 }
 
 .skill__title {
-  margin: 60px 0 20px 0;
+  margin: 48px 0 20px 0;
   text-align: center;
 }
 

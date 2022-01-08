@@ -17,6 +17,7 @@ h1 {
 }
 
 h2 {
+  margin: 0;
   @include font (4rem, 8rem, $color: $color-section-title);
   text-align: center;  
 }
@@ -36,3 +37,6 @@ p {
   text-align: center;
 }
 
+// section {
+//   padding-top: 100px;
+// }
