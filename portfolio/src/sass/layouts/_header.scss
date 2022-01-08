@@ -1,7 +1,3 @@
-.header {   
-    
-}
-
 .header__wrapper {
   background: url("../assets/header/bg.png");
   background-repeat: no-repeat;
@@ -13,15 +9,6 @@
   @include media-tablet {
     max-width: $tablet-width;
     padding: 0 60px;
-  }
-  
-}
-
-.header__navigation {
-  display: flex;
-  align-items: center;
-  @include media-tablet {
-    gap: 20px;
   }
   
 }
