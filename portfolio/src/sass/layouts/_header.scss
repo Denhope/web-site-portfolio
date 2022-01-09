@@ -9,8 +9,7 @@
   @include media-tablet {
     max-width: $tablet-width;
     padding: 0 60px;
-  }
-  
+  }  
 }
 
 .navigation__list,
@@ -41,5 +40,9 @@
   }
   @include media-mobile {   
     width: 35px;   
-  } 
+  }   
+}
+
+.header__navigation {
+  padding-right: 16px;
 }
