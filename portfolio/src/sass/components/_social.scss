@@ -11,7 +11,7 @@ ul.social {
 .social__link {
   display: block; 
   box-sizing: border-box;
-  transition: all 0.3s;
+  @extend %transition;  
   align-items: center;
   padding: auto;
 }
@@ -21,6 +21,7 @@ ul.social {
   &:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
+    @extend %transition;  
   }
 }
 
