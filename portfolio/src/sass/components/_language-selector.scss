@@ -1,0 +1,31 @@
+.language-selector {
+  display: flex;
+}
+
+.language-selector__link, 
+.language-selector__slash  {
+  padding: 0px 3.5px;
+  list-style: none;
+  cursor: pointer;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  color: $color-link; 
+  @extend %transition;  
+  &:hover {
+    color: $color-primery;
+  }   
+}
+
+.link_selected {  
+  color: $color-primery;  
+}
+
+.language-selector__slash {
+  cursor: auto;
+  &:hover {
+    color: $color-white;
+  }   
+}
