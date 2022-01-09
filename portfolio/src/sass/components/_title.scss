@@ -1,13 +1,13 @@
 .section-title {
-margin: 0 auto;
+  margin: 0 auto;
   align-items: center;
  
-  @include media-tablet {
-    margin: 80px auto 50px;
-  }
-  @include media-mobile {
-    margin: 0px auto 0px;
-  }  
+  // @include media-tablet {
+  //   margin: 80px auto 50px;
+  // }
+  // @include media-mobile {
+  //   margin: 0px auto 0px;
+  // }  
   
   position: relative;
   text-align: center;
