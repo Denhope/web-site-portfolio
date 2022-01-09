@@ -18,7 +18,7 @@
 .footer__data {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 21px;
   margin: 0;
   padding: 50px 0;
   @include media-tablet {
@@ -29,6 +29,9 @@
     padding: 0px;
     align-items: center;
   }
+}
+.footer-link {
+  padding: 0 6px;
 }
 
 .copyright-rs,

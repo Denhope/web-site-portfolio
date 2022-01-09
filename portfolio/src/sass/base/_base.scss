@@ -32,7 +32,7 @@ h4 {
 }
 
 p {
-  @include font (2rem, 4rem, $wight: normal);
+  @include font (2rem, 5rem, $wight: normal);
   @extend %font-add;
   text-align: center;
 }
