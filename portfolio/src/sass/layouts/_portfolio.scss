@@ -39,14 +39,13 @@
   }
 
   @include media-mobile {
-    max-width: 100%;
-    
+    max-width: 100%;    
   }
 }
 
 .slider__set {  
   max-width: 100%;
-  max-height: 1145px;
+  // max-height: 1145px;
   display: flex;
   flex-wrap: wrap;  
   justify-content: center;
