@@ -13,7 +13,7 @@
 
   &_bordered {
     background-color: transparent;
-    border:  1px solid $color-primery;
+    border:  2px solid $color-primery;
     color: $color-primery;
     &:hover{
       color: $color-hovered;
@@ -22,7 +22,7 @@
 
   &_colored {
     background-color: $color-primery;
-    border:  1px solid $color-primery;
+    border:  2px solid $color-primery;
     color: $color-primery-button;
     &:hover{
       color: $color-hovered;
@@ -55,8 +55,8 @@
   img {
     width: 75px;
   }
-    top: calc(50% - 55px);
-    left: calc(50% - 30px);
+  top: calc(50% - -13px);
+  left: calc(50% - 42px);
   }
 
   @include media-mobile {
