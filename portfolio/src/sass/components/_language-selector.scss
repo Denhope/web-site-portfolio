@@ -1,10 +1,15 @@
 .language-selector {
   display: flex;
+  justify-content: space-around;
+  width: 75px;
+  @include media-tablet {
+    width: 110px;
+  }
 }
 
 .language-selector__link, 
 .language-selector__slash  {
-  padding: 0px 3.5px;
+  // padding: 0px 3.5px;
   list-style: none;
   cursor: pointer;
   font-family: Inter;

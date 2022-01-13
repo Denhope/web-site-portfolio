@@ -20,6 +20,9 @@ h2 {
   margin: 0;
   @include font (4rem, 8rem, $color: $color-section-title);
   text-align: center;  
+  @include media-tablet {
+    @include font (3.2rem, 4rem, $color: $color-section-title);
+  }
 }
 
 h3 {
@@ -29,14 +32,17 @@ h3 {
 h4 {
   @include font (2rem, 4rem);
   @extend %font-add;
+  
 }
 
 p {
-  @include font (2rem, 5rem, $wight: normal);
+  @include font (2rem, 5rem, $wight: 400);
   @extend %font-add;
   text-align: center;
+  margin: 0;
+  @include media-tablet {
+    line-height: 2.4rem;
+  }
 }
 
-// section {
-//   padding-top: 100px;
-// }
+
