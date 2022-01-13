@@ -1,13 +1,22 @@
 .price__wrapper {
   background-color: $color-background;
   padding-top: 100px;
+  @include media-tablet {
+    padding-top: 133px;
+  }
 }
 
 .price-container {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   gap: 25px;
-  padding: 60px 0px 100px;  
+  padding: 60px 0px 100px;
+  @include media-tablet {
+    padding: 70px 0px 80px;
+    gap: 50px;
+  }  
 }
 
 .price-block {
@@ -18,7 +27,11 @@
   align-items: center;
   justify-content: space-between;
   border: solid 3px $color-primery;
-  padding: 43px 0;
+  padding: 41px 0;
+  @include media-tablet {
+    min-width: 420px;
+  }
+
   @include media-mobile {
     min-width: auto;
     min-height: auto;

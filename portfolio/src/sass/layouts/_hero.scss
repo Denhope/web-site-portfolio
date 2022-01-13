@@ -6,8 +6,11 @@
   background-position: center -90px;
   background-repeat: no-repeat; 
   @include media-tablet {
-    min-height: 590px;
+    min-height: 500px;
     padding: 0 0 0 60px; 
+    // height: 500px;
+    background-position: -5px -122px;
+    background-size: auto 620px;
   }
   @include media-mobile {
     max-height: 400px;
@@ -21,9 +24,9 @@
   flex-direction: column;
   margin-top: 160px;
   @include media-tablet {
-    max-width: 469px;
+    max-width: 390px;
     max-height: 274px;  
-    margin-top: 150px;
+    margin-top: 78px;
   }
   @include media-mobile {
     max-width: 220px;
@@ -39,6 +42,11 @@
 
   @include font (2rem, 4rem, $wight: 400);
   @extend %font-add;
+  
+  @include media-tablet {
+    @include font (2rem, 2.4rem, $wight: normal);
+    margin: 0 0 59px;
+  }
 
   @include media-mobile{
     @include font (1rem, 2rem, $wight: 200);
@@ -49,6 +57,7 @@
   max-width: 500px;
   @include media-tablet {
     @include font (3.2rem, 6.4rem, $wight: 400);
+    margin: 0 0 20px;
   }
 
   // @include media-mobile {

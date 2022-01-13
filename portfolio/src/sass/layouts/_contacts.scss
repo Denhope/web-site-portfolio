@@ -4,11 +4,15 @@
   background-position: center center;
   min-height: 700px;
   justify-content: right;
-  padding: 59px 20px 0;
+  padding: 60px 20px 0;
 
   @include media-tablet {     
     justify-content: center; 
     min-height: 600px; 
+    padding: 70px 20px 0;
+    height: 590px;
+    // background-position: -5px -30px;
+    background-size: auto 600px;
   }
 }
 
@@ -34,6 +38,7 @@
   text-align: left;
   @include media-tablet {
     text-align: center;
+    margin: 0 0 43px;
   }
 }
 
@@ -44,7 +49,7 @@
   margin: 10px 0; 
   border: 2px solid $color-primery;  
   text-align: left;
-  padding: 5px 226px 5px 20px;
+  padding: 5px 226px 5px 18px;
   background: rgba(0, 0, 0, 0.5);
   @include font (2rem, 4rem, $color: $color-white, $wight: normal);
   @extend %font-add;
@@ -52,7 +57,7 @@
 
 .contacts__message {
   margin: 10px 0 30px;
-  padding: 5px 204px 55px 20px;
+  padding: 7px 204px 55px 18px;
   height: 100px;
   width: 100%;
   border: 2px solid $color-primery;  

@@ -4,10 +4,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  min-height: 150px;
 
   @include media-tablet {
     flex-direction: column;  
-    padding: 20px 0; 
+    padding: 28px 0; 
+    min-height: 190px;
   }
 
   @include media-mobile {
@@ -20,36 +22,29 @@
   justify-content: space-between;
   gap: 21px;
   margin: 0;
-  padding: 50px 0;
   @include media-tablet {
-    padding: 0px 0;
-    
+        
   }
+
   @include media-mobile {
     padding: 0px;
     align-items: center;
   }
 }
-.footer-link {
-  padding: 0 6px;
-}
 
 .copyright-rs,
-.github,
-.label {
-  margin: 0;  
+.github
+ {
   a {
     @include font (2rem, 5rem, $wight: 400,);
     @extend %font-add;  
+    @extend %transition;
     &:hover {
-      color: $color-primery;
-      @extend %transition;
+      color: $color-primery;   
+    }
+    @include media-tablet {
+      line-height: 2.4rem;    
     }
   }
 } 
-.year {
-  margin: 0;
-  @include font (1.8rem, 5rem, $wight: 400,);
-  @extend %font-add; 
 
-}

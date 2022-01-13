@@ -1,14 +1,6 @@
 .section-title {
   margin: 0 auto;
   align-items: center;
- 
-  // @include media-tablet {
-  //   margin: 80px auto 50px;
-  // }
-  // @include media-mobile {
-  //   margin: 0px auto 0px;
-  // }  
-  
   position: relative;
   text-align: center;
   width: 50%;
@@ -33,10 +25,10 @@
     top: 50%;    
     height: 2px;
     left: 0;
-    width: 280px;
+    width: 275px;
   
     @include media-laptop {
-      width: 173px;
+      width: 170px; 
     }
     
     @include media-tablet {
@@ -51,14 +43,14 @@
 
 .portfolio-title {
   &:before {    
-    width: 237px;
+    width: 240px;
   
     @include media-laptop {
       width: 140px;
     }
     
     @include media-tablet {
-     width: 82px;
+     width: 101px;
     }
     
     @include media-mobile {

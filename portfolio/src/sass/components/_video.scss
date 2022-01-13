@@ -1,14 +1,21 @@
 .video__wrapper{
   background-color: $color-background;
-  padding-top: 100px;
+  padding: 53px 20px 0;
   @include media-tablet {
-    padding: 0, -20px;
+    // padding: 0, 20px;
+    padding: 98px 0 0;
   }  
+}
+.video__player {
+  padding-top: 60px;
+  @include media-tablet {
+    padding-top: 70px;
+  }  
+
 }
 
 .player {
-  position: relative;
-  padding-top: 60px;
+  position: relative;  
   display: flex;
   flex-direction: column;
   max-width: 1440px;
@@ -16,6 +23,7 @@
   height: auto;  
 }
 
+// .player
 
 
 
