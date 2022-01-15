@@ -6,6 +6,10 @@
   border-radius: 5px;
   width: 100%;
   height: 3px;
+  @extend %transition;
+  &:active {
+    background-color: $color-primery; 
+  }
 }
 
 .hamburger {
@@ -13,26 +17,45 @@
   position: relative;
   width:50px;
   height: 25px;
-  &:hover {
-    color: $color-primery;
-  }
+  z-index: 3;
+  cursor: pointer;
+ 
   @include media-tablet {
-      display: inline-block;
+    display: inline-block;   
   }
   &:before {
-      @extend %hamburger-line;
-      top: 0;
-      left: 0;
-  }
+    @extend %hamburger-line;
+    top: 0;
+    left: 0;   
+    }
+
   &:after {
-      @extend %hamburger-line;
-      bottom: 0;
-      left: 0;
+    @extend %hamburger-line;
+    bottom: 0;
+    left: 0;        
+  }
+}
+
+.hamburger_active {
+  &:after {
+    bottom: 10px;
+    transform: rotate(45deg); 
+  }
+  &:before {
+    top: 10px;
+    transform: rotate(-45deg); 
   }
 }
 
 .hamburger__line {
   @extend %hamburger-line;
   top: calc( 50% - 1.5px );
-  left: 0;
+  left: 0;  
+  &:active {
+    background-color: $color-primery; 
+  }
 }
+.hamburger_active span {
+  display: none;  
+}
+

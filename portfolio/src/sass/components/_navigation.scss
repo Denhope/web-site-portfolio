@@ -1,7 +1,17 @@
 .navigation {
   display: flex;
-  align-items: center;  
-  margin-left: auto; 
+    
+}
+
+.navigation__list {
+  display: flex; 
+  z-index: 3;
+  @include media-tablet {
+    flex-direction: column;
+    margin: 0;
+    gap: 15px; 
+    // background-color: $color-primery; 
+  }   
 }
 
 .navigation__link {
@@ -19,9 +29,15 @@
     &:hover {
       color: $color-primery;
     }
-  }   
+  }  
+  @include media-tablet{
+    font-size: 34.8235px;
+    line-height: 73px;
+    padding: 0;
+  } 
 }
 
 .link_selected {  
   color: $color-primery;
 }
+
