@@ -9,6 +9,10 @@ body {
   @extend %font-primery;
 }
 
+.body_lock {
+  overflow: hidden;
+}
+
 h1 {
   @include font (6rem, 12rem);  
   @include media-tablet {

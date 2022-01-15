@@ -3,6 +3,7 @@ export function burger () {
   const menu = document.querySelector('.header__navigation');
   const menuLinks = menu.querySelectorAll('.navigation__link');
   const modal = document.querySelector('.popup');
+  const body = document.querySelector('body')
 
  
   menuLinks.forEach(item => {
@@ -21,12 +22,11 @@ export function burger () {
           }
       }
       else {
-          if (menuHamburger.classList.contains('hamburger_active')){
-            if (!(menu.contains(evt.target))){
-              console.log(menu.contains(evt.target));
-              closeMenu();
-            }
+        if (menuHamburger.classList.contains('hamburger_active')){
+          if (!(menu.contains(evt.target))){
+            closeMenu();
           }
+        }
       }
   })
 
@@ -36,7 +36,7 @@ export function burger () {
     menuHamburger.style.position = 'relative';
     menuHamburger.style.right = 'auto';
     modal.classList.remove('popup_active');
-    modal.style.background = 'none';
+    body.classList.remove('body_lock');
   }
 
   function openMenu(){
@@ -45,7 +45,6 @@ export function burger () {
     menuHamburger.style.position = 'fixed';
     menuHamburger.style.right = '64px';
     modal.classList.add('popup_active');
-    modal.style.background = 'rgba(0,0,0, 0.5)';
-  }   
- 
+    body.classList.add('body_lock');
+  }    
 }
