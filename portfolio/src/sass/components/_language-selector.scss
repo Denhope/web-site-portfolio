@@ -4,6 +4,7 @@
   width: 75px;
   @include media-tablet {
     width: 110px;
+    margin-left: auto;
   }
 }
 
