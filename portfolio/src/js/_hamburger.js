@@ -2,6 +2,8 @@ export function burger () {
   const menuHamburger = document.querySelector('.header__hamburger');
   const menu = document.querySelector('.header__navigation');
   const menuLinks = menu.querySelectorAll('.navigation__link');
+  const modal = document.querySelector('.popup');
+
  
   menuLinks.forEach(item => {
     item.addEventListener('click', () => {
@@ -33,13 +35,17 @@ export function burger () {
     menu.style.top = '-150%';
     menuHamburger.style.position = 'relative';
     menuHamburger.style.right = 'auto';
-    }
+    modal.classList.remove('popup_active');
+    modal.style.background = 'none';
+  }
 
   function openMenu(){
     menuHamburger.classList.add('hamburger_active');
     menu.style.top = '0';
     menuHamburger.style.position = 'fixed';
     menuHamburger.style.right = '64px';
+    modal.classList.add('popup_active');
+    modal.style.background = 'rgba(0,0,0, 0.5)';
   }   
-  
+ 
 }
