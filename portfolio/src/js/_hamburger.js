@@ -30,11 +30,16 @@ export function burger () {
 
   function closeMenu(){
     menuHamburger.classList.remove('hamburger_active');
-    menu.style.top = '-100%';
+    menu.style.top = '-150%';
+    menuHamburger.style.position = 'relative';
+    menuHamburger.style.right = 'auto';
     }
 
   function openMenu(){
     menuHamburger.classList.add('hamburger_active');
     menu.style.top = '0';
-  }
+    menuHamburger.style.position = 'fixed';
+    menuHamburger.style.right = '64px';
+  }   
+  
 }

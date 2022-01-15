@@ -38,12 +38,12 @@
   padding-right: 13px;
   @extend %transition; 
   @include media-tablet { 
-    top: -100%; 
+    top: -150%; 
     margin: 0;
     position: fixed;
     background-color: $color-background;
     // opacity: 0.5;
-    z-index: 2;
+    z-index: 3;
     left: 148px;
     height: 100%;  
     width: 100%;    
