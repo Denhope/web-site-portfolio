@@ -2,9 +2,11 @@
   background-color: $color-background;
   padding: 53px 20px 0;
   @include media-tablet {
-    // padding: 0, 20px;
-    padding: 98px 0 0;
+   padding: 98px 0 0;
   }  
+  @include media-mobile {
+    padding-top: 40px;  
+  } 
 }
 .video__player {
   padding-top: 60px;

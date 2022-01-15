@@ -3,8 +3,8 @@
   justify-items: center;
   background-color: $color-background;
   padding: 100px 20px 0;
-  @include media-tablet {
-  
+  @include media-mobile {
+    padding-top: 40px;  
   }  
 }
 

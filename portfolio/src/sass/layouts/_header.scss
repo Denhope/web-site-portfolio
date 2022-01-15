@@ -12,6 +12,9 @@
     background-position: -5px -32px;
     background-size: auto 620px;
   }  
+  @include media-mobile {
+    padding: 0 20px;
+  }
 }
 
 .header__language {
