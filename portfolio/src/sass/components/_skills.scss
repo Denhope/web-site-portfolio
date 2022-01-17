@@ -15,7 +15,7 @@
   justify-content: space-between;
   
   @include  media-laptop {
-       
+    // @include columns($width: 48%);
   }
   @include media-tablet {
     padding: 66px 40px;
@@ -39,6 +39,9 @@
   align-items: center; 
   // padding: 10px 10px;
   @include media-laptop {
+    max-width: 330px; 
+  }
+  @include media-tablet {
     max-width: 300px; 
   }
 

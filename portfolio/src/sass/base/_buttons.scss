@@ -8,21 +8,16 @@
   line-height: 4rem; 
   cursor: pointer; 
   text-align: center; 
-  
+  background-color: transparent;
+  border:  2px solid $color-primery;
+  color: $color-primery;
+  &:hover{
+    color: $color-hovered;
+  }  
   @extend %transition;
 
-  &_bordered {
-    background-color: transparent;
-    border:  2px solid $color-primery;
-    color: $color-primery;
-    &:hover{
-      color: $color-hovered;
-    }
-  }
-
-  &_colored {
-    background-color: $color-primery;
-    border:  2px solid $color-primery;
+  &_active {
+    background-color: $color-primery;   
     color: $color-primery-button;
     &:hover{
       color: $color-hovered;
