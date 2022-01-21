@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer');
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = (env, options) => {
     const isProduction = options.mode === 'production';
@@ -41,7 +42,7 @@ module.exports = (env, options) => {
                   ]
               }, {
                   test: /\.(png|svg|jpe?g|gif)$/,
-                  // type: 'asset/resource',
+                  type: 'asset/resource',
                   
               }, {
                   test: /\.html$/,
@@ -61,6 +62,12 @@ module.exports = (env, options) => {
         }),
         new MiniCssExtractPlugin({
           filename: 'style.css'
+        }),
+        new CopyPlugin({
+          patterns: [
+            { from: "./src/assets/img", to: "./assets/img" },
+            // { from: "./src/assets/sound", to: "./public/sound" },
+          ],
         })
       ],
       // ...devServer()
