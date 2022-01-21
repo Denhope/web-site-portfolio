@@ -70,7 +70,7 @@ export function language(){
       console.log(currentLang); 
       elementsForTranslated.forEach((el) => {
         console.log('1');
-        el.textContent = i18Obj.el[currentLang.dataset];        
+        el.textContent = i18Obj.el[currentLang];        
       }) 
         
 

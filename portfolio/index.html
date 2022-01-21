@@ -38,9 +38,9 @@
       </nav>  
       
       <div class="header__language language-selector">
-        <span class="language-selector__link link_selected">en</span>
+        <span class="language-selector__link link_selected" data-i18 = "en">en</span>
         <span class="language-selector__slash">/</span>
-        <span class="language-selector__link">ru</span>   
+        <span class="language-selector__link" data-i18 = "ru">ru</span>   
       </div> 
       <div class="header__hamburger hamburger">
         <span class="hamburger__line"></span>
@@ -202,13 +202,14 @@
                       required type="email">
           <input class="contacts__phone" id="contacts-phone" name="phone" placeholder="Phone"
                       required type="tel">
-          <textarea class="contacts__message" id="contacts-message" maxlength="1500" minlength="5"
+          <input class="contacts__message" id="contacts-message" maxlength="1500" minlength="5"
                       name="message" pattern="[A-Za-zА-Яа-я ]{5,1500}" placeholder="Message" required type="text">
           <button class="button button_colored contacts-botton" data-i18>Send message</button>          
         </div> 
       </div>
     </section> 
     <div class="popup"></div>   
+   
 
   </main>
 
