@@ -11,7 +11,7 @@ export function portfolioSection() {
       console.log(`нажатие-${activeBtn}`); 
 
       portfolioImages.forEach((img, index) => {
-        img.src = `.src/assets/img/${activeBtn}/${index+ 1}.jpg`;        
+        img.src = `./assets/img/${activeBtn}/${index+ 1}.jpg`;        
       }) 
 
       console.log('функция смена изображений');
@@ -30,13 +30,13 @@ export function portfolioSection() {
     seasons.forEach((el) => {
       for (let i =1; i <= 6; i++) {
         const img = new Image();
-        img.src = `.src/assets/portfolio/${el}/${i}.jpg`;
+        img.src = `./assets/img/${el}/${i}.jpg`;
         console.log('prelodfunction');
       }
     })
   }
   portfolioHandlerBtn();
-  // prelodImages();
+  prelodImages();
   
 }
 
