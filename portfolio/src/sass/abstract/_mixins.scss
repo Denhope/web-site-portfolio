@@ -19,6 +19,10 @@
   @media (max-width: $laptop-width) { @content; }
 }
 
+@mixin media-620 {
+  @media (max-width: $content-width-620) { @content; }
+}
+
 @mixin media-tablet {
   @media (max-width: $tablet-width) { @content; } 
 }
