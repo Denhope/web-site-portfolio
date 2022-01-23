@@ -1,5 +1,6 @@
 export function clickBurgerMenu () {
   const menuHamburger = document.querySelector('.header__hamburger');
+  const menuSpan = document.querySelector('.hamburger__line');
   const menu = document.querySelector('.header__navigation');
   const menuLinks = menu.querySelectorAll('.navigation__link');
   const modal = document.querySelector('.popup');
@@ -12,7 +13,7 @@ export function clickBurgerMenu () {
   })
 
   document.addEventListener('click', evt => {
-      if (evt.target ===menuHamburger){
+      if ((evt.target ===menuHamburger) || (evt.target ===menuSpan)) {
           if (menuHamburger.classList.contains('hamburger_active')){
             closeMenu();
           }
