@@ -7,60 +7,35 @@
   overflow-x: hidden; 
 
   &:after {
+    display: inline-block;
+    vertical-align: middle;
     background-color: $color-primery;
     content: "";
-    position: absolute;
+    position: relative;
     top: 50%;    
     height: 2px;
+    margin-right: -100%;
+    right: -14px;
     width: 100%;
-    @include media-mobile {
-      width: 0;
-    }
   }
 
   &:before {
+    display: inline-block;
+    vertical-align: middle;
     background-color: $color-primery;
     content: "";
-    position: absolute;
+    position: relative;
     top: 50%;    
     height: 2px;
-    left: 0;
-    width: 275px;
-  
-    @include media-laptop {
-      width: 170px; 
-    }
-    
-    @include media-tablet {
-     width: 122px;
-    }
-    @include media-mobile {
-      width: 0;
-    }
-
-  }
-}
-
-.portfolio-title {
-  &:before {    
-    width: 240px;
-  
-    @include media-laptop {
-      width: 140px;
-    }
-    
-    @include media-tablet {
-     width: 101px;
-    }
-    
-    @include media-mobile {
-      width: 0;
-    }
+    margin-left: -100%;
+    left: -14px;
+    width: 100%;
+     
   }
 }
 
 .section-title__text {
   display: inline-block;
   align-items: center;
-  padding: 0 20px;
+  vertical-align: middle;
 }
