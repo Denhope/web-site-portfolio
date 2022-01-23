@@ -32,7 +32,7 @@ export function clickBurgerMenu () {
 
   const closeMenu = () => {
     menuHamburger.classList.remove('hamburger_active');
-    menu.style.top = '-150%';
+    menu.classList.remove('header__navigation_hamburger_active');
     menuHamburger.style.position = 'relative';
     menuHamburger.style.right = 'auto';
     modal.classList.remove('popup_active');
@@ -40,8 +40,8 @@ export function clickBurgerMenu () {
   }
 
   const openMenu = () => {
+    menu.classList.add('header__navigation_hamburger_active');
     menuHamburger.classList.add('hamburger_active');
-    menu.style.top = '0';
     menuHamburger.style.position = 'fixed';
     menuHamburger.style.right = '64px';
     modal.classList.add('popup_active');
