@@ -22,11 +22,10 @@
   @extend %transition;  
   &:hover {
     color: $color-primery;
-  }   
-}
-
-.link_selected {  
-  color: $color-primery;  
+  } 
+  &_active {
+    color: $color-primery;
+  }  
 }
 
 .language-selector__slash {
