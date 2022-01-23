@@ -1,10 +1,9 @@
-export function burger () {
+export function clickBurgerMenu () {
   const menuHamburger = document.querySelector('.header__hamburger');
   const menu = document.querySelector('.header__navigation');
   const menuLinks = menu.querySelectorAll('.navigation__link');
   const modal = document.querySelector('.popup');
   const body = document.querySelector('body')
-
  
   menuLinks.forEach(item => {
     item.addEventListener('click', () => {
@@ -30,7 +29,7 @@ export function burger () {
       }
   })
 
-  function closeMenu(){
+  const closeMenu = () => {
     menuHamburger.classList.remove('hamburger_active');
     menu.style.top = '-150%';
     menuHamburger.style.position = 'relative';
@@ -39,7 +38,7 @@ export function burger () {
     body.classList.remove('body_lock');
   }
 
-  function openMenu(){
+  const openMenu = () => {
     menuHamburger.classList.add('hamburger_active');
     menu.style.top = '0';
     menuHamburger.style.position = 'fixed';

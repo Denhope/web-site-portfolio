@@ -1,4 +1,4 @@
-export function score() {
+export const score = ()=> {
   console.log (
     `оценка - 110 баллов 
     Отзыв по пунктам ТЗ:
