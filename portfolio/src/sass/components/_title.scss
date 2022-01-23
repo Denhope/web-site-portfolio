@@ -17,6 +17,10 @@
     margin-right: -100%;
     right: -14px;
     width: 100%;
+    @include media-mobile {
+      display: none;   
+    }
+  
   }
 
   &:before {
@@ -30,6 +34,9 @@
     margin-left: -100%;
     left: -14px;
     width: 100%;
+    @include media-mobile {
+      display: none;   
+    }
      
   }
 }
