@@ -31,10 +31,23 @@
     }
   }  
   @include media-tablet{
-    font-size: 34.8235px;
+    font-family: Merriweather;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
     line-height: 73px;
+    letter-spacing: 0em;
+    text-align: left;
+
     padding: 0;
   } 
+}
+
+.navigation__link a[data-theme ='light']{
+  color: $color-link-light; 
+  &:hover {
+    color: $color-linkActive-light;
+  }
 }
 
 .link_selected {  

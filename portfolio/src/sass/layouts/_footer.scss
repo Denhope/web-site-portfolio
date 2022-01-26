@@ -48,3 +48,14 @@
   }
 } 
 
+.copyright-rs[data-theme ='light'],
+.github[data-theme ='light'] {
+  a{
+    color: $color-text-light; 
+    &:hover {
+      color: $color-primery;   
+    }
+  }
+  
+}
+

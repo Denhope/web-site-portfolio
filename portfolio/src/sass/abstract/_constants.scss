@@ -13,6 +13,27 @@ $color-white: #ffffff;
 $color-hovered:#ffffff;
 $color-hamburger:#bdae82;
 
+// white theme
+
+$orange:#bdae82;
+$white:#ffffff;
+$black:#000000;
+$blackMat:#1C1C1C;
+
+$color-primery-light: $orange;
+$color-background-light:$white;
+$color-text-light: $blackMat;
+$color-hovered-light:$orange;
+$color-hoveredActive-light:$orange;
+$color-backgroundBtn-light:$orange;
+$color-backgroundActiveBtn-light:$blackMat;
+$color-textActiveBtn-light:$orange;
+$color-link-light:$black;
+$color-linkActive-light:$white;
+
+
+
+
 
 $content-width: 1440px;
 $content-width-620: 620px;

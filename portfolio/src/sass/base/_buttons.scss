@@ -1,5 +1,6 @@
 .button,
-.portfolio__button {
+.portfolio__button,
+.price__button {
   min-width: 220px;
   padding: 6px 0px;
   font-family: Inter;
@@ -23,13 +24,52 @@
     &:hover{
       color: $color-hovered;
     }
+    
+  }
+  
+}
+.portfolio__button[data-theme ='light'],
+ .price__button[data-theme ='light'] {
+  background-color: $color-backgroundBtn-light;
+  color: $color-text-light;
+  &:hover{
+    color: $color-hoveredActive-light;
+    background-color:$color-backgroundActiveBtn-light;
+  } 
+}
+
+.portfolio__button_active[data-theme ='light'],
+.contacts-botton__active[data-theme ='light'],
+.hero__button_active[data-theme ='light'],
+.contacts-botton_active[data-theme ='light']{
+  background-color: $color-backgroundActiveBtn-light;   
+  color: $color-textActiveBtn-light;
+  &:hover{
+    color: $color-hoveredActive-light;
   }
 }
 
-.contacts-botton {
+.hero__button_active[data-theme ='light'],
+.contacts-botton_active[data-theme ='light']{
+  color: $color-text-light;
+}
+
+.contacts-botton,
+.hero__button {
   max-width: 220px;
   @include media-mobile {
     max-width: 100%;
+  }
+  background-color: $color-backgroundBtn-light;
+  color:$color-black;
+}
+.contacts-botton[data-theme ='light'],
+.hero__button[data-theme ='light'] {
+  background-color: $color-white;   
+  color: $color-text-light;
+  &:hover{
+    color: $color-hoveredActive-light;
+    background-color:$color-backgroundActiveBtn-light;
   }
 }
 
@@ -61,5 +101,5 @@
     }
       top: 50%;
       left: calc(50% - 30px);
-    }
+  }
 }

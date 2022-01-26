@@ -4,6 +4,19 @@ html{
   scroll-behavior: smooth; 
 }
 
+html[data-theme='light'] {
+  background-color: $color-white;
+ 
+}
+
+.transition,
+.transition *,
+.transition *:before,
+.transition *:after {
+  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms!important;
+  transition-delay: 0!important;
+}
+
 body {
   font-size: 1.6rem;
   @extend %font-primery;
@@ -12,6 +25,7 @@ body {
 .body_lock {
   overflow: hidden;
 }
+
 
 h1 {
   @include font (6rem, 12rem);  
@@ -47,6 +61,13 @@ p {
   @include media-tablet {
     line-height: 2.4rem;
   }
+}
+
+h1[data-theme ='light'],
+h2[data-theme ='light'],
+h3[data-theme ='light'],
+p[data-theme ='light'] {
+  color: $color-text-light;
 }
 
 

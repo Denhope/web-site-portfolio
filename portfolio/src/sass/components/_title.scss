@@ -41,6 +41,12 @@
   }
 }
 
+.section-title[data-theme ='light'] {  
+  &:after, &:before {
+    background-color: $color-text-light;
+  }
+}
+
 .section-title__text {
   display: inline-block;
   align-items: center;

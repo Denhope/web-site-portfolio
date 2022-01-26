@@ -7,6 +7,9 @@
     padding-top: 40px;  
   }  
 }
+.skills__wrapper[data-theme ='light']{
+  background-color: $color-background-light;
+}
 
 .skills-container {
   padding: 62px 2px 0px 0;

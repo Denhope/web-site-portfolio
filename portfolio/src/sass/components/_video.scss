@@ -1,6 +1,6 @@
-.video__wrapper{
+.video__wrapper {
   background-color: $color-background;
-  padding: 53px 20px 0;
+  padding: 98px 20px 0;
   @include media-tablet {
    padding: 98px 0 0;
   }  
@@ -8,6 +8,11 @@
     padding-top: 40px;  
   } 
 }
+
+.video__wrapper[data-theme ='light']{
+  background-color: $color-background-light;
+}
+
 .video__player {
   padding-top: 60px;
   @include media-tablet {
