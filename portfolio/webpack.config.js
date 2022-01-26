@@ -17,7 +17,7 @@ module.exports = (env, options) => {
       output: {
           path: path.join(__dirname, '/dist'),
           filename: 'script.js',
-          assetModuleFilename: 'assets/[hash][ext]',
+          assetModuleFilename: 'assets/public/[hash][ext]',
       },
       resolve: {
           extensions: ['.js', '.json', '.mjs'],
@@ -66,7 +66,7 @@ module.exports = (env, options) => {
         new CopyPlugin({
           patterns: [
             { from: "./src/assets/img", to: "./assets/img" },
-            // { from: "./src/assets/sound", to: "./public/sound" },
+            { from: "./src/assets/image/", to: "./assets/image" },
           ],
         })
       ],
