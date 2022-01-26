@@ -2,7 +2,23 @@
   padding: 0 0 0 80px; 
   min-height: 820px;
   display: flex;
-  background: url("../assets/hero/bg.png");
+  background: url("../assets/hero/bg.jpg");
+  background-position: center -90px;
+  background-repeat: no-repeat; 
+  @include media-tablet {
+    min-height: 500px;
+    padding: 0 0 0 60px; 
+    // height: 500px;
+    background-position: -5px -122px;
+    background-size: auto 620px;
+  }
+  @include media-mobile {
+    max-height: 400px;
+    padding: 0 0 0 20px;
+  }
+}
+.hero__wrapper[data-theme ='light'] { 
+  background: url("../assets/hero/bg-hero-light.jpg");
   background-position: center -90px;
   background-repeat: no-repeat; 
   @include media-tablet {
