@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html >
+<html lang="en" data-theme = "dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,75 +12,79 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">    
   </head>
 
-<body>
+<body class>
   <header class="header">
-    <div class="wrapper header__wrapper">
-      <img class="header__logo" src="./src/assets/header/logo.svg" alt="header-logo">        
-      <nav class=" header__navigation navigation">
+    <div class="wrapper header__wrapper" data-theme = "dark">
+      <img class="header__logo" src="./src/assets/header/logo.svg" alt="header-logo"  data-theme = "dark">        
+      <nav class=" header__navigation navigation" data-theme = "dark">
         <ul class="navigation__list">
           <li class="navigation__link">
-            <a href="#skills" data-i18 = "skills">Skills</a>
+            <a href="#skills" data-i18 = "skills" data-theme = "dark">Skills</a>
           </li>
           <li class="navigation__link">
-            <a href="#portfolio" data-i18 = "portfolio">Portfolio</a>
+            <a href="#portfolio" data-i18 = "portfolio" data-theme = "dark">Portfolio</a>
           </li>
           <li class="navigation__link">
-            <a href="#video" data-i18 = "video">Video</a>
+            <a href="#video" data-i18 = "video" data-theme = "dark">Video</a>
           </li>
           <li class="navigation__link">
-            <a href="#price" data-i18 = "price">Price</a>
+            <a href="#price" data-i18 = "price" data-theme = "dark">Price</a>
           </li>
           <li class="navigation__link">
-            <a href="#contacts" data-i18 = "contacts">Contacts</a>
+            <a href="#contacts" data-i18 = "contacts" data-theme = "dark">Contacts</a>
           </li>
         </ul>        
            
       </nav>  
       
       <div class="header__language language-selector">
-        <span class="language-selector__link language-selector__link_active" id="en">en</span>
-        <span class="language-selector__slash">/</span>
-        <span class="language-selector__link" id="ru">ru</span>   
+        <span class="language-selector__link language-selector__link_active" id="en" data-theme = "dark">EN</span>
+        <span class="language-selector__slash"  data-theme = "dark">/</span>
+        <span class="language-selector__link" id="ru" data-theme = "dark">RU</span>   
       </div> 
-      <div class="header__hamburger hamburger">
-        <span class="hamburger__line"></span>
-      </div>    
-    </div>   
+      <img class="header__theme-selector theme-selector" data-theme = "dark" src="./src/assets/img/carbon_sun.svg" alt="header-logo">
+      
+      <div class="header__hamburger hamburger" data-theme = "dark">
+        <span class="hamburger__line" data-theme = "dark"></span>
+      </div> 
+      
+         
+    </div>       
   </header>
 
   <main>
     <section class ="hero">
-      <div class="wrapper hero__wrapper">
+      <div class="wrapper hero__wrapper" data-theme = "dark">
         <div class="hero__content">
-          <h1 class="hero__title" data-i18 ="hero__title">Alexa Rise</h1>
-          <p class="hero__text" data-i18 = "hero__text">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
+          <h1 class="hero__title" data-i18 ="hero__title" data-theme = "dark">Alexa Rise</h1>
+          <p class="hero__text" data-i18 = "hero__text" data-theme = "dark">Save sincere emotions, romantic feelings and happy moments of life together with professional photographer Alexa Rise</p>
           <div class="hero__button">
-            <button class="hero__button button" data-i18 = "hire">Hire me</button>
+            <button class="hero__button button" data-i18 = "hire" data-theme = "dark">Hire me</button>
           </div>
         </div>  
       </div>
     </section>
 
     <section class id="skills" >
-      <div class="wrapper skills__wrapper">
-        <div class="section-title ">
-          <h2 class="section-title__text" data-i18 = "skills">Skills</h2>                  
+      <div class="wrapper skills__wrapper" data-theme = "dark">
+        <div class="section-title" data-theme = "dark">
+          <h2 class="section-title__text" data-i18 = "skills" data-theme = "dark">Skills</h2>                  
         </div>          
         <div class="skills-container">
           <div class="skill">            
             <div class="skill__icon icon-square_camera">
               <img  src="./src/assets/skills/camera.svg" alt="skills-logo">
             </div>           
-            <h4 class="skill__title" data-i18 = "skill__title_1">Digital photography</h4>
-            <p class="skill__text" data-i18 = "skill__text_1">High-quality photos in the studio and on the nature</p>
+            <h4 class="skill__title" data-i18 = "skill__title_1" data-theme = "dark">Digital photography</h4>
+            <p class="skill__text" data-i18 = "skill__text_1" data-theme = "dark">High-quality photos in the studio and on the nature</p>
           </div>
           <div class="skill">
             <div class="skill__icon icon-square_video">
               <img  src="./src/assets/skills/video 1.svg" alt="skills-logo">
               </span>
             </div>
-            <h4 class="skill__title" data-i18 ="skill__title_2">Video shooting</h4>
-            <p class="skill__text " data-i18 = "skill__text_2">Capture your moments so that they always stay with you</p>
+            <h4 class="skill__title" data-i18 ="skill__title_2" data-theme = "dark">Video shooting</h4>
+            <p class="skill__text " data-i18 = "skill__text_2" data-theme = "dark">Capture your moments so that they always stay with you</p>
           </div>
 
           <div class="skill">
@@ -88,8 +92,8 @@
               <img  src="./src/assets/skills/image 1.svg" alt="skills-logo">
               </span>
             </div>
-            <h4 class="skill__title " data-i18 = "skill__title_3">Rotouch</h4>
-            <p class="skill__text" data-i18 = "skill__text_3">I strive to make photography surpass reality</p>
+            <h4 class="skill__title " data-i18 = "skill__title_3" data-theme = "dark">Rotouch</h4>
+            <p class="skill__text" data-i18 = "skill__text_3" data-theme = "dark">I strive to make photography surpass reality</p>
           </div>
 
           <div class="skill">
@@ -97,25 +101,25 @@
               <img  src="./src/assets/skills/mic 1.svg" alt="skills-logo">
               </span>
             </div>
-            <h4 class="skill__title" data-i18 = "skill__title_4">Audio</h4>
-            <p class="skill__text" data-i18 = "skill__text_4">Professional sounds recording for video, advertising, portfolio</p>
+            <h4 class="skill__title" data-i18 = "skill__title_4" data-theme = "dark">Audio</h4>
+            <p class="skill__text" data-i18 = "skill__text_4" data-theme = "dark">Professional sounds recording for video, advertising, portfolio</p>
 
           </div>
         </div>
       </div>
     </section>
 
-    <section class id="portfolio">
-      <div class="wrapper portfolio__wrapper">
-        <div class="section-title portfolio-title">
-          <h2 class="section-title__text" data-i18 = "portfolio">Portfolio</h2>                  
+    <section class id="portfolio" data-theme = "dark">
+      <div class="wrapper portfolio__wrapper" data-theme = "dark">
+        <div class="section-title" data-theme = "dark">
+          <h2 class="section-title__text" data-i18 = "portfolio" data-theme = "dark">Portfolio</h2>                  
         </div>  
               
         <div class="portfolio__buttons-container">
-          <button class="portfolio__button button" data-season ="winter" data-i18 = "winter">Winter</button>
-          <button class="portfolio__button button" data-season="spring" data-i18 = "spring">Spring</button>
-          <button class="portfolio__button button" data-season="summer" data-i18 = "summer">Summer</button>
-          <button class="portfolio__button button portfolio__button_active" data-season="autumn" data-i18 = "autumn">Autumn</button>          
+          <button class="portfolio__button button" data-theme = "dark" data-season ="winter" data-i18 = "winter">Winter</button>
+          <button class="portfolio__button button" data-theme = "dark" data-season="spring" data-i18 = "spring">Spring</button>
+          <button class="portfolio__button button" data-theme = "dark" data-season="summer" data-i18 = "summer">Summer</button>
+          <button class="portfolio__button button portfolio__button_active" data-theme = "dark" data-season="autumn" data-i18 = "autumn">Autumn</button>          
         </div>                     
 
         <div class="portfolio__slider-container">
@@ -131,10 +135,10 @@
       </div>
     </section>
 
-    <section class id="video">     
-      <div class="wrapper video__wrapper">        
-        <div class="section-title">
-          <h2 class="section-title__text" data-i18 = "video">Video</h2>                  
+    <section class id="video" >     
+      <div class="wrapper video__wrapper" data-theme = "dark">        
+        <div class="section-title" data-theme = "dark">
+          <h2 class="section-title__text" data-i18 = "video" data-theme = "dark">Video</h2>                  
         </div>  
         <div class="player video__player">
           <button class="player__screen-button">
@@ -146,65 +150,62 @@
     </section>
 
     <section class id="price">
-      <div class="wrapper price__wrapper">
-        <div class="section-title">
-          <h2 class="section-title__text" data-i18 = "price">Price</h2>                  
+      <div class="wrapper price__wrapper" data-theme = "dark">
+        <div class="section-title" data-theme = "dark">
+          <h2 class="section-title__text" data-i18 = "price" data-theme = "dark">Price</h2>                  
         </div>  
         <div class="price-container">
           <div class="price-block">
-            <h3 class="price-block__title">Standart</h3>
-            <h3 class="price-block__number">500 $</h3>
-            <p class=" price-block__text" data-i18 = "price__text_1">
+            <h3 class="price-block__title" data-theme = "dark">Standart</h3>
+            <h3 class="price-block__number" data-theme = "dark">500 $</h3>
+            <p class=" price-block__text" data-i18 = "price__text_1" data-theme = "dark">
               One location
               120 photos in color
               12 photos in retouch
               Readiness 2-3 weeks
               Make up, visage                             
             </p>
-            <button class="button button_colored" data-i18 = "order">Order shooting</button>            
+            <button class="button price__button" data-i18 = "order" data-theme = "dark">Order shooting</button>            
           </div>
 
           <div class="price-block">
-            <h3 class="price-block__title">Premium</h3>
-            <h3 class="price-block__number">700 $</h3>
-            <p class="price-block__text" data-i18 = "price__text_2">
+            <h3 class="price-block__title" data-theme = "dark">Premium</h3>
+            <h3 class="price-block__number" data-theme = "dark">700 $</h3>
+            <p class="price-block__text" data-i18 = "price__text_2" data-theme = "dark">
               One or two locations
               200 photos in color
               20 photos in retouch
               Readiness 1-2 weeks
               Make up, visage             
             </p>
-            <button class="button button_colored" data-i18 = "order">Order shooting</button>            
+            <button class="button price__button" data-i18 = "order" data-theme = "dark">Order shooting</button>            
           </div>
 
           <div class="price-block">
-            <h3 class="price-block__title">Gold</h3>
-            <h3 class="price-block__number">1000 $</h3>
-            <p class="price-block__text" data-i18 = "price__text_3">
+            <h3 class="price-block__title" data-theme = "dark">Gold</h3>
+            <h3 class="price-block__number" data-theme = "dark">1000 $</h3>
+            <p class="price-block__text" data-i18 = "price__text_3" data-theme = "dark">
               Tree locations or more
               300 photos in color
               50 photos in retouch
               Readiness 1 weeksMake
               up, visage, hairstyle          
             </p>
-            <button class="button button_colored" data-i18 = "order">Order shooting</button>            
+            <button class="button price__button" data-i18 = "order" data-theme = "dark">Order shooting</button>            
           </div>
         </div>     
       </div>
     </section>
     
     <section class id="contacts">
-      <div class="wrapper contacts__wrapper">
+      <div class="wrapper contacts__wrapper" data-theme = "dark">
         <div class="contacts__container">
-          <h2 class="contacts__title" data-i18 = "contacts__title">Contact me</h2>          
+          <h2 class="contacts__title" data-i18 = "contacts__title" data-theme = "dark">Contact me</h2>          
                    
-          <input class="contacts__email" id="contacts-email" name="email" placeholder="E-mail"
-                      required type="email">
-          <input class="contacts__phone" id="contacts-phone" name="phone" placeholder="Phone"
-                      required type="tel">
-          <input class="contacts__message" id="contacts-message" maxlength="1500" minlength="5"
-                      name="message" pattern="[A-Za-zА-Яа-я ]{5,1500}" placeholder="Message" required type="text">
-          <button class="button button_colored contacts-botton" data-i18 = "contacts-botton">Send message</button>          
+          <input class="contacts__email" id="contacts-email" name="email" placeholder="E-mail" required type="email" data-theme = "dark">
+          <input class="contacts__phone" data-i18 = "phone" data-theme = "dark" id="contacts-phone" name="phone" placeholder ="Phone" data-theme = "dark"  required type="tel">
+          <input class="contacts__message" id="contacts-message" maxlength="1500" minlength="5" name="message" pattern="[A-Za-zА-Яа-я ]{5,1500}" placeholder="Message" required type="text" data-theme = "dark">
+          <button class="button contacts-botton" data-i18 = "contacts-botton" data-theme = "dark">Send message</button>          
         </div> 
       </div>
     </section> 
@@ -215,42 +216,42 @@
 
   <footer class="footer">
     <div class="wrapper footer__wrapper">
-      <div class="footer__data">
-        <p class="label">©</p>
-        <p class="year">2022</p>
-        <p class="github">
-          <a class="footer-link" href="https://github.com/Denhope">github</a>
+      <div class="footer__data" >
+        <p class="label" data-theme = "dark">©</p>
+        <p class="year" data-theme = "dark">2022</p>
+        <p class="github" data-theme = "dark">
+          <a class="footer-link" href="https://github.com/Denhope" data-theme = "dark">github</a>
         </p>
       </div>
 
       <div class="footer__copyright">
-        <p class="copyright-rs">
-          <a class="footer-link" href=" https://rs.school/js-stage0/">Rolling Scopes School</a>
+        <p class="copyright-rs" data-theme = "dark">
+          <a class="footer-link" href=" https://rs.school/js-stage0/" data-theme = "dark">Rolling Scopes School</a>
         </p>
       </div>              
       
       <ul class="social">            
-        <li class="social__items social_instagram">
-          <a class="social__link" href="https://www.instagram.com/?hl=ru" target="_blank">
-            <img  src="./src/assets/footer/insta.svg" alt="social-logo">
+        <li class="social__items social__instagram">
+          <a class="social__link"  href="https://www.instagram.com/?hl=ru" target="_blank">
+            <img  class="sosial__insta" data-theme = "dark" src="./src/assets/footer/insta.svg" alt="social-logo">
           </a>
         </li>
 
         <li class="social__items social__facebook">
           <a class="social__link" href="https://www.facebook.com" target="_blank">
-            <img  src="./src/assets/footer/fb.svg" alt="social-logo">
+            <img  class="social__fb" data-theme = "dark" src="./src/assets/footer/fb.svg" alt="social-logo">
           </a>
         </li>
 
-        <li class="social__items social_twitter">
-          <a class="social__link" href="https://www.twitter.com" target="_blank">
-            <img  src="./src/assets/footer/tw.svg" alt="social-logo">
+        <li class="social__items social__twitter">
+          <a class="social__link"  href="https://www.twitter.com" target="_blank">
+            <img  class="social__tw" data-theme = "dark" src="./src/assets/footer/tw.svg" alt="social-logo">
           </a>
         </li>
 
-        <li class="social__items social_pinterest">
-          <a class="social__link" href="https://www.pinterest.com" target="_blank">
-            <img  src="./src/assets/footer/pinterest.svg" alt="social-logo">
+        <li class="social__items social__pinterest">
+          <a class="social__link"  href="https://www.pinterest.com" target="_blank">
+            <img  class="social__pi" data-theme = "dark" src="./src/assets/footer/pinterest.svg" alt="social-logo">
           </a>          
         </li>          
       </ul>
