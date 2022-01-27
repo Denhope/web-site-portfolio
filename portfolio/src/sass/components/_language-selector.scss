@@ -11,17 +11,14 @@
 
 .language-selector__link, 
 .language-selector__slash  {
-  // padding: 0px 3.5px;
   list-style: none;
   cursor: pointer;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 50px;
   letter-spacing: 0em;
+  @include font (2rem, 5rem, $color: $color-link, $wight: 700);
+  @extend %font-add;
+  
  
-  color: $color-link; 
+  // color: $color-link; 
   @extend %transition;  
   &:hover {
     color: $color-primery;

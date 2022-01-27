@@ -18,11 +18,8 @@
   list-style: none;
   padding: 0 15px;
   cursor: pointer;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 50px;
+  @include font (2rem, 5rem, $wight: normal); 
+  @extend %font-add;
   a {
     color: $color-link; 
     @extend %transition;  
@@ -32,13 +29,8 @@
   }  
   @include media-tablet{
     font-family: Merriweather;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 73px;
-    letter-spacing: 0em;
     text-align: left;
-
+    @include font (4rem, 7.3rem, $wight: 700);    
     padding: 0;
   } 
 }

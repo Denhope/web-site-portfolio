@@ -4,10 +4,7 @@
   min-width: 220px;
   padding: 6px 0px;
   font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2rem;
-  line-height: 4rem; 
+  @include font (2rem, 4rem, $wight:normal);
   cursor: pointer; 
   text-align: center; 
   background-color: transparent;

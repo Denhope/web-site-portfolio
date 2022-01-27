@@ -8,7 +8,6 @@
   @include media-tablet {
     min-height: 500px;
     padding: 0 0 0 60px; 
-    // height: 500px;
     background-position: -5px -122px;
     background-size: auto 620px;
   }
@@ -25,7 +24,6 @@
   @include media-tablet {
     min-height: 500px;
     padding: 0 0 0 60px; 
-    // height: 500px;
     background-position: -5px -122px;
     background-size: auto 620px;
   }
@@ -78,8 +76,5 @@
     @include font (3.2rem, 6.4rem, $wight: 400);
     margin: 0 0 20px;
   }
-
-  // @include media-mobile {
-  //   @include font (2.2rem, 4.4rem, $wight: 400);
-  // }
+ 
 }
