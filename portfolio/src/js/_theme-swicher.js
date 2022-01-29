@@ -22,21 +22,21 @@ export function setTheme(themeAttribute) {
     if (attribute === "dark") {
       trans();
       el.setAttribute("data-theme", "light");
-      themeSwicher.src = `./assets/image/svg/theme-night.svg`;
-      themeInsta.src = `./assets/image/svg/inst 1.svg`;
-      themeFb.src = `./assets/image/svg/fb 1.svg`;
-      themeTw.src = `./assets/image/svg/tw 1.svg`;
-      themePi.src = `./assets/image/svg/pinterest 1.svg`;
-      themeLogo.src = `./assets/image/svg/logo-light.svg`;
+      themeSwicher.src = `./assets/img/icons/header/theme-night.svg`;
+      themeInsta.src = `./assets/img/icons/footer/inst 1.svg`;
+      themeFb.src = `./assets/img/icons/footer/fb 1.svg`;
+      themeTw.src = `./assets/img/icons/footer/tw 1.svg`;
+      themePi.src = `./assets/img/icons/footer/pinterest 1.svg`;
+      themeLogo.src = `./assets/img/icons/header/logo-light.svg`;
     } else {
       trans();
       el.setAttribute("data-theme", "dark");
-      themeSwicher.src = `./assets/image/svg/carbon_sun.svg`;
-      themeInsta.src = `./assets/image/svg/insta.svg`;
-      themeFb.src = `./assets/image/svg/fb.svg`;
-      themeTw.src = `./assets/image/svg/tw.svg`;
-      themePi.src = `./assets/image/svg/pinterest.svg`;
-      themeLogo.src = `./assets/image/svg/logo.svg`;
+      themeSwicher.src = `./assets/img/icons/header/carbon_sun.svg`;
+      themeInsta.src = `./assets/img/icons/footer/insta.svg`;
+      themeFb.src = `./assets/img/icons/footer/fb.svg`;
+      themeTw.src = `./assets/img/icons/footer/tw.svg`;
+      themePi.src = `./assets/img/icons/footer/pinterest.svg`;
+      themeLogo.src = `./assets/img/icons/header/logo.svg`;
     }
   });
 }

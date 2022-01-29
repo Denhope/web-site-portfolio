@@ -14,7 +14,7 @@ export function changeImage() {
 
   const getImage = (btn) => {
     portfolioImages.forEach((img, index) => {
-      img.src = `./assets/img/${btn}/${index + 1}.jpg`;
+      img.src = `./assets/img/data/${btn}/${index + 1}.jpg`;
       trans();
     });
   };
@@ -25,7 +25,7 @@ export const prelodImages = () => {
   seasons.forEach((el) => {
     for (let i = 1; i <= 6; i++) {
       const img = new Image();
-      img.src = `./assets/img/${el}/${i}.jpg`;
+      img.src = `./assets/img/data/${el}/${i}.jpg`;
     }
   });
 };

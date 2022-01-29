@@ -1,5 +1,5 @@
 .header__wrapper {
-  background: url("../assets/header/bg.jpg");
+  background: url("../assets/img/backgrounds/bg.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
   display: flex;
@@ -19,7 +19,7 @@
   }
 }
 .header__wrapper[data-theme="light"] {
-  background: url("../assets/header/bg-hero-light.jpg");
+  background: url("../assets/img/backgrounds/bg-hero-light.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
   @include media-tablet {
@@ -89,7 +89,6 @@
   }
 
   @include media-mobile {
-    // left: 0px;
     padding: 60px 0 0;
     height: 100%;
     opacity: 0.9;
@@ -104,6 +103,5 @@
 
 .header__hamburger {
   @include media-tablet {
-    // row-gap: 35;
   }
 }

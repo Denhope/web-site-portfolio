@@ -1,7 +1,6 @@
 .language-selector {
   display: flex;
   justify-content: space-around;
-  // width: 60px;
   gap: 10px;
   @include media-tablet {
     width: 60px;
@@ -16,8 +15,6 @@
   letter-spacing: 0em;
   @include font(2rem, 5rem, $color: $color-link, $wight: 700);
   @extend %font-add;
-
-  // color: $color-link;
   @extend %transition;
   &:hover {
     color: $color-primery;

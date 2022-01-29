@@ -1,10 +1,7 @@
-
 //Abstract
 @import "abstract/constants";
 @import "abstract/placeholders";
 @import "abstract/mixins";
-
-
 
 //Base
 @import "base/normalize";
@@ -13,7 +10,6 @@
 @import "base/icons";
 @import "base/hamburger";
 @import "base/modal";
-
 
 //Layouts
 @import "layouts/wrapper";
@@ -24,9 +20,8 @@
 @import "layouts/columns";
 @import "layouts/footer";
 
-
 // Components
-// @import "components/contacts";
+
 @import "components/price";
 @import "components/video";
 @import "components/skills";
@@ -35,9 +30,3 @@
 @import "components/title.scss";
 @import "components/language-selector";
 @import "components/theme-swicher";
-
-
-
-
-
-

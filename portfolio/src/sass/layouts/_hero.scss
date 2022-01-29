@@ -2,7 +2,7 @@
   padding: 0 0 0 80px;
   min-height: 820px;
   display: flex;
-  background: url("../assets/hero/bg.jpg");
+  background: url("../assets/img/backgrounds/bg.jpg");
   background-position: center -90px;
   background-repeat: no-repeat;
   @include media-tablet {
@@ -18,7 +18,7 @@
   }
 }
 .hero__wrapper[data-theme="light"] {
-  background: url("../assets/hero/bg-hero-light.jpg");
+  background: url("../assets/img/backgrounds/bg-hero-light.jpg");
   background-position: center -90px;
   background-repeat: no-repeat;
   @include media-tablet {
