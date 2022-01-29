@@ -4,50 +4,47 @@
   min-width: 220px;
   padding: 6px 0px;
   font-family: Inter;
-  @include font (2rem, 4rem, $wight:normal);
-  cursor: pointer; 
-  text-align: center; 
+  @include font(2rem, 4rem, $wight: normal);
+  cursor: pointer;
+  text-align: center;
   background-color: transparent;
-  border:  2px solid $color-primery;
+  border: 2px solid $color-primery;
   color: $color-primery;
-  &:hover{
+  &:hover {
     color: $color-hovered;
-  }  
+  }
   @extend %transition;
-
   &_active {
-    background-color: $color-primery;   
+    background-color: $color-primery;
     color: $color-primery-button;
-    &:hover{
+    &:hover {
       color: $color-hovered;
     }
-    
   }
-  
 }
-.portfolio__button[data-theme ='light'],
- .price__button[data-theme ='light'] {
+.portfolio__button[data-theme="light"],
+.price__button[data-theme="light"] {
   background-color: $color-backgroundBtn-light;
   color: $color-text-light;
-  &:hover{
+  &:hover {
     color: $color-hoveredActive-light;
-    background-color:$color-backgroundActiveBtn-light;
-  } 
+    background-color: $color-backgroundActiveBtn-light;
+  }
 }
 
-.portfolio__button_active[data-theme ='light'],
-.contacts-botton__active[data-theme ='light'],
-.hero__button_active[data-theme ='light'],
-.contacts-botton_active[data-theme ='light']{
-  background-color: $color-backgroundActiveBtn-light;   
+.portfolio__button_active[data-theme="light"],
+.contacts-botton__active[data-theme="light"],
+.hero__button_active[data-theme="light"],
+.contacts-botton_active[data-theme="light"] {
+  background-color: $color-backgroundActiveBtn-light;
   color: $color-textActiveBtn-light;
-  &:hover{
+  &:hover {
     color: $color-hoveredActive-light;
   }
 }
 
-.hero__button_active[data-theme ='light'],
-.contacts-botton_active[data-theme ='light']{
+.hero__button_active[data-theme="light"],
+.contacts-botton_active[data-theme="light"] {
   color: $color-text-light;
 }
 
@@ -58,15 +55,15 @@
     max-width: 100%;
   }
   background-color: $color-backgroundBtn-light;
-  color:$color-black;
+  color: $color-black;
 }
-.contacts-botton[data-theme ='light'],
-.hero__button[data-theme ='light'] {
-  background-color: $color-white;   
+.contacts-botton[data-theme="light"],
+.hero__button[data-theme="light"] {
+  background-color: $color-white;
   color: $color-text-light;
-  &:hover{
+  &:hover {
     color: $color-hoveredActive-light;
-    background-color:$color-backgroundActiveBtn-light;
+    background-color: $color-backgroundActiveBtn-light;
   }
 }
 
@@ -75,28 +72,28 @@
   top: calc(50% - 45px);
   left: calc(50% - 80px);
   z-index: 2;
-  background-color: transparent;  
+  background-color: transparent;
   border: none;
   cursor: pointer;
-  @extend %transition;  
+  @extend %transition;
   &:hover {
-    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-    contrast(87%);
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
+      brightness(92%) contrast(87%);
   }
- 
+
   @include media-tablet {
-  img {
-    width: 75px;
-  }
-  top: calc(50% - -13px);
-  left: calc(50% - 42px);
+    img {
+      width: 75px;
+    }
+    top: calc(50% - -13px);
+    left: calc(50% - 42px);
   }
 
   @include media-mobile {
     img {
       width: 50px;
     }
-      top: 50%;
-      left: calc(50% - 30px);
+    top: 50%;
+    left: calc(50% - 30px);
   }
 }

@@ -1,9 +1,9 @@
 .theme-selector {
   width: 45px;
   cursor: pointer;
-  @extend %transition;  
+  @extend %transition;
   &:hover {
-    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-    contrast(87%);
-  }  
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
+      brightness(92%) contrast(87%);
+  }
 }

@@ -7,10 +7,10 @@
   display: flex;
   // justify-content: center;
 }
-.layout-2-column {  
+.layout-2-column {
   @include columns($width: 48%);
 }
 
-.layout-1-column {  
+.layout-1-column {
   @include columns($width: 100%);
 }

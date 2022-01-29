@@ -1,13 +1,13 @@
-.hero__wrapper { 
-  padding: 0 0 0 80px; 
+.hero__wrapper {
+  padding: 0 0 0 80px;
   min-height: 820px;
   display: flex;
   background: url("../assets/hero/bg.jpg");
   background-position: center -90px;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   @include media-tablet {
     min-height: 500px;
-    padding: 0 0 0 60px; 
+    padding: 0 0 0 60px;
     background-position: -5px -122px;
     background-size: auto 620px;
   }
@@ -17,13 +17,13 @@
     background-position: -400px -122px;
   }
 }
-.hero__wrapper[data-theme ='light'] { 
+.hero__wrapper[data-theme="light"] {
   background: url("../assets/hero/bg-hero-light.jpg");
   background-position: center -90px;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   @include media-tablet {
     min-height: 500px;
-    padding: 0 0 0 60px; 
+    padding: 0 0 0 60px;
     background-position: -5px -122px;
     background-size: auto 620px;
   }
@@ -37,44 +37,42 @@
 .hero__content {
   max-width: 500px;
   max-height: 330px;
-   display: flex;
+  display: flex;
   flex-direction: column;
   margin-top: 160px;
   @include media-tablet {
     max-width: 390px;
-    max-height: 274px;  
+    max-height: 274px;
     margin-top: 78px;
   }
   @include media-mobile {
     max-width: 220px;
-    max-height: 150px;  
-    
+    max-height: 150px;
   }
 }
 
-.hero__text {  
+.hero__text {
   max-width: 470px;
   margin: 0 0 25px;
   text-align: left;
 
-  @include font (2rem, 4rem, $wight: 400);
+  @include font(2rem, 4rem, $wight: 400);
   @extend %font-add;
-  
+
   @include media-tablet {
-    @include font (2rem, 2.4rem, $wight: normal);
+    @include font(2rem, 2.4rem, $wight: normal);
     margin: 0 0 59px;
   }
 
-  @include media-mobile{
-    @include font (1.8rem, 2rem, $wight: 200);
+  @include media-mobile {
+    @include font(1.8rem, 2rem, $wight: 200);
   }
 }
 .hero__title {
   margin: 0 0 10px;
   max-width: 500px;
   @include media-tablet {
-    @include font (3.2rem, 6.4rem, $wight: 400);
+    @include font(3.2rem, 6.4rem, $wight: 400);
     margin: 0 0 20px;
   }
- 
 }

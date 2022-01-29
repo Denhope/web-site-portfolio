@@ -2,14 +2,14 @@
   background-color: $color-background;
   padding: 98px 20px 0;
   @include media-tablet {
-   padding: 98px 0 0;
-  }  
+    padding: 98px 0 0;
+  }
   @include media-mobile {
-    padding-top: 40px;  
-  } 
+    padding-top: 40px;
+  }
 }
 
-.video__wrapper[data-theme ='light']{
+.video__wrapper[data-theme="light"] {
   background-color: $color-background-light;
 }
 
@@ -17,21 +17,16 @@
   padding-top: 60px;
   @include media-tablet {
     padding-top: 70px;
-  }  
-
+  }
 }
 
 .player {
-  position: relative;  
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: 1440px;
   width: 100%;
-  height: auto;  
+  height: auto;
 }
 
 // .player
-
-
-
-

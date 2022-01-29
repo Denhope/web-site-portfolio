@@ -4,7 +4,7 @@
   position: relative;
   text-align: center;
   width: 50%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 
   &:after {
     display: inline-block;
@@ -12,15 +12,14 @@
     background-color: $color-primery;
     content: "";
     position: relative;
-    top: 50%;    
+    top: 50%;
     height: 2px;
     margin-right: -100%;
     right: -14px;
     width: 100%;
     @include media-mobile {
-      display: none;   
+      display: none;
     }
-  
   }
 
   &:before {
@@ -29,20 +28,20 @@
     background-color: $color-primery;
     content: "";
     position: relative;
-    top: 50%;    
+    top: 50%;
     height: 2px;
     margin-left: -100%;
     left: -14px;
     width: 100%;
     @include media-mobile {
-      display: none;   
+      display: none;
     }
-     
   }
 }
 
-.section-title[data-theme ='light'] {  
-  &:after, &:before {
+.section-title[data-theme="light"] {
+  &:after,
+  &:before {
     background-color: $color-text-light;
   }
 }

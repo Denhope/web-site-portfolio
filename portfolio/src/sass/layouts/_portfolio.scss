@@ -7,13 +7,12 @@
   align-items: center;
   @include media-tablet {
     padding-top: 105px;
-  } 
+  }
   @include media-mobile {
-    padding-top: 40px;  
-  } 
-  
+    padding-top: 40px;
+  }
 }
-.portfolio__wrapper[data-theme ='light']{
+.portfolio__wrapper[data-theme="light"] {
   background-color: $color-background-light;
 }
 
@@ -26,28 +25,27 @@
     max-width: 445px;
     padding-top: 70px;
     padding-bottom: 59px;
-  }  
+  }
 
   @include media-mobile {
-    width: 220px;    
-  }  
+    width: 220px;
+  }
 }
 
 .portfolio__slider-container {
   @include media-tablet {
-    
   }
 
   @include media-mobile {
-    max-width: 100%;    
+    max-width: 100%;
   }
 }
 
-.portfolio__slider-set {  
+.portfolio__slider-set {
   max-width: 100%;
   // max-height: 1145px;
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
 }

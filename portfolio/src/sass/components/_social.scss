@@ -1,7 +1,7 @@
 .social {
   display: flex;
   gap: 20px;
-  list-style: none; 
+  list-style: none;
   margin: 0;
 }
 ul.social {
@@ -9,18 +9,18 @@ ul.social {
 }
 
 .social__link {
-  display: block; 
+  display: block;
   box-sizing: border-box;
-  @extend %transition;  
+  @extend %transition;
   align-items: center;
   padding: auto;
 }
 
 .social__items {
-  cursor: pointer;  
+  cursor: pointer;
   &:hover {
-    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-    contrast(87%);
-    @extend %transition;  
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
+      brightness(92%) contrast(87%);
+    @extend %transition;
   }
 }

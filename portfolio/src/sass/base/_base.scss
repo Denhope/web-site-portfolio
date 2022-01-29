@@ -1,20 +1,19 @@
-html{
+html {
   font-size: 10px;
   background-color: $color-background;
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
-html[data-theme='light'] {
+html[data-theme="light"] {
   background-color: $color-white;
- 
 }
 
 .transition,
 .transition *,
 .transition *:before,
 .transition *:after {
-  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms!important;
-  transition-delay: 0!important;
+  transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 420ms !important;
+  transition-delay: 0 !important;
 }
 
 body {
@@ -26,35 +25,33 @@ body {
   overflow: hidden;
 }
 
-
 h1 {
-  @include font (6rem, 12rem);  
+  @include font(6rem, 12rem);
   @include media-tablet {
-    @include font (3.2rem, 6.4rem, $wight: 400);
+    @include font(3.2rem, 6.4rem, $wight: 400);
   }
 }
 
 h2 {
   margin: 0;
-  @include font (4rem, 8rem, $color: $color-section-title);
-  text-align: center;  
+  @include font(4rem, 8rem, $color: $color-section-title);
+  text-align: center;
   @include media-tablet {
-    @include font (3.2rem, 4rem, $color: $color-section-title);
+    @include font(3.2rem, 4rem, $color: $color-section-title);
   }
 }
 
 h3 {
-  @include font (2.8rem, 5.6rem);
+  @include font(2.8rem, 5.6rem);
 }
 
 h4 {
-  @include font (2rem, 4rem);
+  @include font(2rem, 4rem);
   @extend %font-add;
-  
 }
 
 p {
-  @include font (2rem, 5rem, $wight: 400);
+  @include font(2rem, 5rem, $wight: 400);
   @extend %font-add;
   text-align: center;
   margin: 0;
@@ -63,11 +60,9 @@ p {
   }
 }
 
-h1[data-theme ='light'],
-h2[data-theme ='light'],
-h3[data-theme ='light'],
-p[data-theme ='light'] {
+h1[data-theme="light"],
+h2[data-theme="light"],
+h3[data-theme="light"],
+p[data-theme="light"] {
   color: $color-text-light;
 }
-
-

@@ -9,48 +9,45 @@
   }
 }
 
-.language-selector__link, 
-.language-selector__slash  {
+.language-selector__link,
+.language-selector__slash {
   list-style: none;
   cursor: pointer;
   letter-spacing: 0em;
-  @include font (2rem, 5rem, $color: $color-link, $wight: 700);
+  @include font(2rem, 5rem, $color: $color-link, $wight: 700);
   @extend %font-add;
-  
- 
-  // color: $color-link; 
-  @extend %transition;  
+
+  // color: $color-link;
+  @extend %transition;
   &:hover {
     color: $color-primery;
-  } 
+  }
   &_active {
     color: $color-primery;
-  }  
+  }
 }
 
-.language-selector__link[data-theme ='light'], 
-.language-selector__slash[data-theme ='light'] {
-  color: $color-link-light; 
+.language-selector__link[data-theme="light"],
+.language-selector__slash[data-theme="light"] {
+  color: $color-link-light;
   &:hover {
     color: $color-white;
   }
-
 }
 
-.language-selector__link_active[data-theme ='light'], 
-.language-selector__slash_active[data-theme ='light'] {
+.language-selector__link_active[data-theme="light"],
+.language-selector__slash_active[data-theme="light"] {
   color: $color-linkActive-light;
 }
-
 
 .language-selector__slash {
   cursor: auto;
   &:hover {
     color: $color-white;
-  }   
+  }
 }
-.language-selector__slash[data-theme ='light'] {
+.language-selector__slash[data-theme="light"] {
   &:hover {
     color: $blackMat;
-  }  
+  }
 }

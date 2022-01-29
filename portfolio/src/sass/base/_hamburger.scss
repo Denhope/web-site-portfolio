@@ -2,7 +2,7 @@
   content: "";
   display: inline-block;
   position: absolute;
-  background-color:$color-white;
+  background-color: $color-white;
   width: 100%;
   height: 3px;
   &:hover {
@@ -11,68 +11,65 @@
 
   @extend %transition;
   &:active {
-    background-color: $color-primery; 
+    background-color: $color-primery;
   }
-  
 }
-%hamburger-line[data-theme ='light'] {
-  background-color:$color-black;
+%hamburger-line[data-theme="light"] {
+  background-color: $color-black;
 }
-
 
 .hamburger {
   display: none;
   position: relative;
-  width:50px;
+  width: 50px;
   height: 25px;
   z-index: 3;
   cursor: pointer;
- 
+
   @include media-tablet {
-    display: inline-block;   
+    display: inline-block;
   }
   &:before {
     @extend %hamburger-line;
     top: 0;
-    left: 0;   
-    }
+    left: 0;
+  }
 
   &:after {
     @extend %hamburger-line;
     bottom: 0;
-    left: 0;        
+    left: 0;
   }
 }
-.hamburger [data-theme ='light']{
+.hamburger [data-theme="light"] {
   &:before {
-   background-color: $color-black;   
-    }
+    background-color: $color-black;
+  }
 
   &:after {
-    background-color: $color-black;       
+    background-color: $color-black;
   }
 }
-
 
 .hamburger_active {
   &:after {
     bottom: 10px;
-    transform: rotate(45deg); 
+    transform: rotate(45deg);
   }
   &:before {
     top: 10px;
-    transform: rotate(-45deg); 
+    transform: rotate(-45deg);
   }
 }
 
 .hamburger__line {
   @extend %hamburger-line;
-  top: calc( 50% - 1.5px );
-  left: 0;  
+  top: calc(50% - 1.5px);
+  left: 0;
   &:active {
-    background-color: $color-primery; 
+    background-color: $color-primery;
   }
 }
 .hamburger_active span {
-  display: none;  
+  display: none;
 }
