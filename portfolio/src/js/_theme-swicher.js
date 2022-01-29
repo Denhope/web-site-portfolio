@@ -1,10 +1,10 @@
 import changeClassActive from "./_base";
+import { trans } from "./_base";
 export function changeTheme() {
   const themeSwicher = document.querySelector(".header__theme-selector");
   themeSwicher.addEventListener("click", () => {
     const themeSwicherAttribute = themeSwicher.getAttribute("data-theme");
     setTheme(themeSwicherAttribute);
-    // console.log(themeSwicherAttribute);
   });
 }
 
@@ -18,7 +18,6 @@ export function setTheme(themeAttribute) {
   const lightModeElements = document.querySelectorAll("[data-theme]");
 
   lightModeElements.forEach((el) => {
-    // let attribute = el.getAttribute("data-theme");
     let attribute = themeAttribute;
     if (attribute === "dark") {
       trans();
@@ -40,11 +39,4 @@ export function setTheme(themeAttribute) {
       themeLogo.src = `./assets/image/svg/logo.svg`;
     }
   });
-
-  function trans() {
-    document.documentElement.classList.add("transition");
-    window.setTimeout(() => {
-      document.documentElement.classList.remove("transition");
-    }, 1000);
-  }
 }

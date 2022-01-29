@@ -1,5 +1,5 @@
 import i18Obj from "./_translate";
-import changeClassActive from "./_base";
+import { changeClassActive } from "./_base";
 export function changeLanguage() {
   const languagelinks = document.querySelectorAll(".language-selector__link");
   changeClassActive("language-selector__link", languagelinks, "i18");
