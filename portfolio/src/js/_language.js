@@ -10,11 +10,10 @@ export function changeLanguage() {
       setLang(currentLang);
     }
   });
-
-  const setLang = (lg) => {
-    const elementsForTranslated = document.querySelectorAll("[data-i18]");
-    elementsForTranslated.forEach(
-      (el) => (el.textContent = i18Obj[lg][el.dataset.i18])
-    );
-  };
 }
+export const setLang = (lg) => {
+  const elementsForTranslated = document.querySelectorAll("[data-i18]");
+  elementsForTranslated.forEach(
+    (el) => (el.textContent = i18Obj[lg][el.dataset.i18])
+  );
+};
