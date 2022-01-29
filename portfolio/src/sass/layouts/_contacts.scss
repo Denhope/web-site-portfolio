@@ -60,7 +60,7 @@
   text-align: left;
   padding: 5px 200px 5px 18px;
   background: rgba(0, 0, 0, 0.5);
-  @include font(2rem, 4rem, $color: $color-white, $wight: normal);
+  @include font(2rem, 4rem, $color: $color-text, $wight: normal);
   @extend %font-add;
 }
 
@@ -73,7 +73,7 @@
   letter-spacing: 0em;
   text-align: left;
   background: rgba(0, 0, 0, 0.5);
-  @include font(2rem, 4rem, $color: $color-white, $wight: normal);
+  @include font(2rem, 4rem, $color: $color-text, $wight: normal);
   @extend %font-add;
 }
 

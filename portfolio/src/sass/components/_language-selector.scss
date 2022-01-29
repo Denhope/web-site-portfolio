@@ -13,7 +13,7 @@
   list-style: none;
   cursor: pointer;
   letter-spacing: 0em;
-  @include font(2rem, 5rem, $color: $color-link, $wight: 700);
+  @include font(2rem, 5rem, $color: $color-text, $wight: 700);
   @extend %font-add;
   @extend %transition;
   &:hover {
@@ -28,7 +28,7 @@
 .language-selector__slash[data-theme="light"] {
   color: $color-link-light;
   &:hover {
-    color: $color-white;
+    color: $color-text;
   }
 }
 
@@ -40,7 +40,7 @@
 .language-selector__slash {
   cursor: auto;
   &:hover {
-    color: $color-white;
+    color: $color-text;
   }
 }
 .language-selector__slash[data-theme="light"] {

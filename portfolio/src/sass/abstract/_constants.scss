@@ -1,40 +1,30 @@
-$color-primery: #bdae82;
-$color-background: #000000;
-$color-black:#000000;
-$color-text: #ffffff;
-$color-hamburger: #ffffff;
-$color-portfolio-btn:#bdae82;
-$color-section-title: #bdae82;
-$color-icons: #bdae82;
-$color-contacts-form:#bdae82;
-$color-link: #ffffff;
-$color-primery-button:#000000;
-$color-white: #ffffff;
-$color-hovered:#ffffff;
-$color-hamburger:#bdae82;
+$orange: #bdae82;
+$white: #ffffff;
+$black: #000000;
+$blackMat: #1c1c1c;
 
-// white theme
+//dark theme//
+$color-primery: $orange;
+$color-background: $black;
+$color-text: $white;
+$color-section-title: $orange;
+$color-active-btn: $black;
+$color-hovered-btn: $white;
 
-$orange:#bdae82;
-$white:#ffffff;
-$black:#000000;
-$blackMat:#1C1C1C;
-
+// light theme//
 $color-primery-light: $orange;
-$color-background-light:$white;
+$color-hamburger-light: $black;
+$color-background-light: $white;
 $color-text-light: $blackMat;
-$color-hovered-light:$orange;
-$color-hoveredActive-light:$orange;
-$color-backgroundBtn-light:$orange;
-$color-backgroundActiveBtn-light:$blackMat;
-$color-textActiveBtn-light:$orange;
-$color-link-light:$black;
-$color-linkActive-light:$white;
+$color-hovered-light: $orange;
+$color-hovered-active-light: $orange;
+$color-background-btn-light: $orange;
+$color-background-btn-active-light: $blackMat;
+$color-text-btn-active-light: $orange;
+$color-link-light: $black;
+$color-linkActive-light: $white;
 
-
-
-
-
+// width//
 $content-width: 1440px;
 $content-width-620: 620px;
 $laptop-width: 1024px;

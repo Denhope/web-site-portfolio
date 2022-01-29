@@ -11,24 +11,24 @@
   border: 2px solid $color-primery;
   color: $color-primery;
   &:hover {
-    color: $color-hovered;
+    color: $color-hovered-btn;
   }
   @extend %transition;
   &_active {
     background-color: $color-primery;
-    color: $color-primery-button;
+    color: $color-active-btn;
     &:hover {
-      color: $color-hovered;
+      color: $color-hovered-btn;
     }
   }
 }
 .portfolio__button[data-theme="light"],
 .price__button[data-theme="light"] {
-  background-color: $color-backgroundBtn-light;
+  background-color: $color-background-btn-light;
   color: $color-text-light;
   &:hover {
-    color: $color-hoveredActive-light;
-    background-color: $color-backgroundActiveBtn-light;
+    color: $color-hovered-active-light;
+    background-color: $color-background-btn-active-light;
   }
 }
 
@@ -36,10 +36,10 @@
 .contacts-botton__active[data-theme="light"],
 .hero__button_active[data-theme="light"],
 .contacts-botton_active[data-theme="light"] {
-  background-color: $color-backgroundActiveBtn-light;
-  color: $color-textActiveBtn-light;
+  background-color: $color-background-btn-active-light;
+  color: $color-text-btn-active-light;
   &:hover {
-    color: $color-hoveredActive-light;
+    color: $color-hovered-active-light;
   }
 }
 
@@ -54,16 +54,16 @@
   @include media-mobile {
     max-width: 100%;
   }
-  background-color: $color-backgroundBtn-light;
-  color: $color-black;
+  background-color: $color-background-btn-light;
+  color: $color-text-light;
 }
 .contacts-botton[data-theme="light"],
 .hero__button[data-theme="light"] {
-  background-color: $color-white;
+  background-color: $color-text;
   color: $color-text-light;
   &:hover {
-    color: $color-hoveredActive-light;
-    background-color: $color-backgroundActiveBtn-light;
+    color: $color-hovered-active-light;
+    background-color: $color-background-btn-active-light;
   }
 }
 
