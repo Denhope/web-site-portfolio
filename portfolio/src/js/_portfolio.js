@@ -1,5 +1,5 @@
-import changeClassActive from "./_base";
-
+import { changeClassActive } from "./_base";
+import { trans } from "./_base";
 export function changeImage() {
   const portfolioBtns = document.querySelectorAll(".portfolio__button");
   const portfolioImages = document.querySelectorAll(".portfolio__item");
@@ -15,6 +15,7 @@ export function changeImage() {
   const getImage = (btn) => {
     portfolioImages.forEach((img, index) => {
       img.src = `./assets/img/${btn}/${index + 1}.jpg`;
+      trans();
     });
   };
 }
