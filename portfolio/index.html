@@ -144,8 +144,17 @@
           <button class="player__screen-button">
             <img  src="./src/assets/img/icons/video/play-btn.svg" alt="play-btn">
           </button>
-          <video class="player__video" poster="./src/assets/img/icons/video/video-player.jpg" src="#"></video>         
-        </div>
+          <video class="player__video" poster="./src/assets/img/icons/video/video-player.jpg" src="./src/assets/video.mp4"></video>   
+          <div class="player__controls">
+            <button class="player__button player__play"></button>
+            <input type="range" value="40" min="0" max="100" step="1" class="player__progress">
+            <button class="player__button player__mute"></button>
+            <input type="range" value="40" min="0" max="100" step="1" class="player__volume">  
+            <button class="player__button player__fullscreen"></button>          
+          </div>
+        </div>      
+      </div>
+                  
       </div>
     </section>
 
