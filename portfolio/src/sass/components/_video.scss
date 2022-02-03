@@ -72,10 +72,27 @@
 .player__volume {
   width: calc(80% - 170px);
   height: 10px;
-  outline: none;
-  // transition: background 450ms ease-in;
-  // -webkit-appearance: none;
 }
+.player__range {
+  height: 8px;
+  border-radius: 0;
+  &.player__volume {
+    background: linear-gradient(
+      to right,
+      rgb(189, 174, 130) 0%,
+      rgb(189, 174, 130) 50%,
+      rgb(200, 200, 200) 50%,
+      rgb(200, 200, 200) 100%
+    );
+  }
+
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+
+  // transition: background 450ms ease-in;
+}
+
 .player__volume {
   width: calc(20% - 50px);
 }
