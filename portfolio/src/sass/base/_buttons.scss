@@ -69,6 +69,7 @@
 
 .player__screen-button {
   position: absolute;
+  max-width: 150px;
   top: calc(50% - 45px);
   left: calc(50% - 80px);
   z-index: 2;
@@ -83,15 +84,15 @@
 
   @include media-tablet {
     img {
-      width: 75px;
+      max-width: 75px;
     }
-    top: calc(50% - -13px);
+    top: calc(50% - 13px);
     left: calc(50% - 42px);
   }
 
   @include media-mobile {
     img {
-      width: 50px;
+      max-width: 50px;
     }
     top: 50%;
     left: calc(50% - 30px);
