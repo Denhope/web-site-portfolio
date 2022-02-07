@@ -73,12 +73,18 @@ export function playVideo() {
     playerVideo.play();
     playerPlayButton.classList.add("player__pause");
     playerScreenPlayButton.style.display = "none";
+    if (document.fullscreenElement === player) {
+      playerScreenPlayButton.style.display = "none";
+    }
   }
 
   function stopPlay() {
     playerVideo.pause();
     playerPlayButton.classList.remove("player__pause");
     playerScreenPlayButton.style.display = "block";
+    if (document.fullscreenElement === player) {
+      playerScreenPlayButton.style.display = "none";
+    }
   }
 
   // audio functions
@@ -136,6 +142,7 @@ export function playVideo() {
       playerFullscreenButton.classList.add("player__fullscreen__exit");
       playerVideo.classList.add("player__video-fullscreen");
       player.requestFullscreen();
+      playerScreenPlayButton.style.display = "none";
     }
   }
 }
