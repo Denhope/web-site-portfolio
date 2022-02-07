@@ -29,10 +29,13 @@
 .player__video {
   height: auto;
   border: 3px solid #bdae82;
+  cursor: pointer;
 }
 
 .player__controls {
-  display: flex;
+  @extend %transition;
+  display: none;
+  // display: flex;
   justify-content: space-around;
   align-items: center;
   height: 60px;

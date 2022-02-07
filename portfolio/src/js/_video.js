@@ -1,6 +1,8 @@
+import { trans } from "./_base";
 export function playVideo() {
   // controls
   const player = document.querySelector(".player");
+  const playerControls = document.querySelector(".player__controls");
   const playerVideo = player.querySelector(".player__video");
   const playerProgress = player.querySelector(".player__progress");
   const playerVolume = player.querySelector(".player__volume");
@@ -73,6 +75,9 @@ export function playVideo() {
     playerVideo.play();
     playerPlayButton.classList.add("player__pause");
     playerScreenPlayButton.style.display = "none";
+    playerControls.style.display = "flex";
+    trans();
+
     if (document.fullscreenElement === player) {
       playerScreenPlayButton.style.display = "none";
     }
