@@ -19,6 +19,9 @@ module.exports = (env, options) => {
       filename: "script.js",
       assetModuleFilename: "assets/public/[hash][ext]",
     },
+    optimization: {
+      minimize: false,
+    },
     resolve: {
       extensions: [".js", ".json", ".mjs"],
     },
@@ -65,7 +68,7 @@ module.exports = (env, options) => {
       new CopyPlugin({
         patterns: [
           { from: "./src/assets/img", to: "./assets/img" },
-          // { from: "./src/assets/image/", to: "./assets/image" },
+          { from: "./src/js/", to: "./assets/js" },
         ],
       }),
     ],
